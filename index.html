@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRAND Emergency Vehicle Warning Products | IJS Electronics</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="description" content="India's leading manufacturer of emergency vehicle warning lights, sirens, and public address systems. ISO 9001:2015 certified. 44+ years of innovation. 29 design patents.">
+<meta property="og:title" content="GRAND Emergency Vehicle Warning Products | IJS Electronics">
+<meta property="og:description" content="India's leading manufacturer of emergency vehicle warning lights, sirens, and public address systems.">
+<meta property="og:image" content="https://grandwarninglights.in/images/Cluster.png">
+<meta property="og:url" content="https://grandwarninglights.in">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GRAND by IJS Electronics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GRAND Emergency Vehicle Warning Products | IJS Electronics">
+<meta name="twitter:description" content="India's leading manufacturer of emergency vehicle warning lights, sirens, and public address systems.">
+<meta name="twitter:image" content="https://grandwarninglights.in/images/Cluster.png">
+<link rel="canonical" href="https://grandwarninglights.in/">
+<meta name="theme-color" content="#1E2282">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1E2282;
+  --navy-dark: #141660;
+  --navy-light: #2B2FA8;
+  --red: #CC1F26;
+  --red-dark: #A01820;
+  --white: #FFFFFF;
+  --off-white: #F4F6FA;
+  --gray: #6B7280;
+  --gray-light: #E8ECF2;
+  --dark: #0D0E1A;
+  --text: #1A1B2E;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-logo img { height: 54px; width: auto; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-links a.active { color: var(--navy); }
+.nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: 4px !important; font-size: 12px !important; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--red-dark) !important; }
+
+/* HERO */
+.hero {
+  min-height: calc(100vh - 32px);
+  margin-top: 32px;
+  background: var(--off-white);
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 5vw 40px;
+  gap: 60px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 100% 50%, rgba(204,31,38,0.04) 0%, transparent 60%);
+}
+.hero-left { position: relative; z-index: 1; max-width: 760px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(30,34,130,0.06); border: 1px solid rgba(30,34,130,0.15);
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--navy); margin-bottom: 1rem;
+  animation: fadeUp 0.6s 0.2s both;
+}
+.hero-badge-dot { width: 6px; height: 6px; background: var(--red); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+.hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(42px, 6vw, 80px); font-weight: 800;
+  line-height: 0.95; letter-spacing: -0.01em; text-transform: uppercase;
+  color: var(--navy); margin-bottom: 0.9rem;
+  animation: fadeUp 0.7s 0.35s both;
+}
+.hero h1 .accent { color: var(--red); }
+.hero-tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gray); margin-bottom: 0.8rem;
+  animation: fadeUp 0.7s 0.5s both;
+}
+.hero p {
+  font-size: 15px; font-weight: 300; color: var(--gray); line-height: 1.7;
+  max-width: 480px; margin-bottom: 1.2rem;
+  animation: fadeUp 0.7s 0.55s both;
+}
+.hero-mission {
+  font-size: 13px; font-style: italic; font-weight: 300;
+  color: var(--gray); border-left: 3px solid var(--red);
+  padding-left: 14px; margin-bottom: 1.2rem;
+  animation: fadeUp 0.7s 0.65s both;
+  border-left-color: var(--red);
+}
+.hero-actions {
+  display: flex; align-items: center; gap: 1.5rem;
+  animation: fadeUp 0.7s 0.75s both;
+}
+.btn-primary {
+  background: var(--red); color: var(--white);
+  padding: 14px 32px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+  border-radius: 4px; transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+.btn-outline {
+  color: var(--navy); border: 1px solid rgba(30,34,130,0.3);
+  padding: 14px 28px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+  border-radius: 4px; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--navy); border-color: var(--navy); color: white; }
+.hero-stats {
+  display: flex; gap: 2.5rem; margin-top: 1.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-light);
+  animation: fadeUp 0.7s 0.9s both;
+}
+.stat-val {
+  font-family: 'Barlow Condensed', sans-serif; font-size: 36px; font-weight: 800;
+  color: #1E2282; line-height: 1;
+}
+.stat-val sup { font-size: 18px; color: var(--red); }
+.stat-lbl { font-size: 10px; font-weight: 500; color: #6B7280; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+.hero-right { position: relative; z-index: 1; animation: fadeIn 1s 0.5s both; display: flex; align-items: center; justify-content: center; }
+.hero-img-wrap {
+  background: white;
+  border-radius: 16px; padding: 32px; position: relative;
+  box-shadow: 0 32px 80px rgba(30,34,130,0.14), 0 8px 24px rgba(0,0,0,0.08);
+}
+.hero-img-wrap img { width: 100%; border-radius: 6px; filter: drop-shadow(0 8px 24px rgba(30,34,130,0.15)); }
+.hero-img-caption { margin-top: 14px; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); }
+
+/* STRIP */
+.strip { background: var(--red); padding: 0 5vw; display: flex; align-items: center; gap: 0; overflow: hidden; flex-wrap: wrap; }
+.strip-item { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.9); white-space: nowrap; padding: 12px 20px; border-right: 1px solid rgba(255,255,255,0.2); }
+
+/* CERT BAR */
+.cert-bar { background: var(--off-white); padding: 16px 5vw; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-bottom: 1px solid var(--gray-light); flex-wrap: wrap; }
+.cert-item { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 500; color: var(--gray); }
+.cert-icon { width: 32px; height: 32px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 800; letter-spacing: 0.03em; text-align: center; line-height: 1.2; flex-shrink: 0; }
+
+/* SECTION */
+section { padding: 90px 5vw; }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+.section-label::before { content: ''; width: 20px; height: 2px; background: var(--red); display: inline-block; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; text-transform: uppercase; line-height: 1; color: var(--navy); margin-bottom: 1.25rem; }
+.section-body { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.8; max-width: 540px; }
+
+/* ABOUT */
+.about { background: var(--off-white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.timeline { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; }
+.tl-item { display: flex; gap: 16px; padding-bottom: 20px; position: relative; }
+.tl-item:not(:last-child)::after { content: ''; position: absolute; left: 19px; top: 32px; bottom: 0; width: 2px; background: var(--gray-light); }
+.tl-year { width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; flex-shrink: 0; z-index: 1; letter-spacing: 0.03em; }
+.tl-content { padding-top: 6px; }
+.tl-title { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+.tl-desc { font-size: 12px; font-weight: 300; color: var(--gray); line-height: 1.5; }
+.about-right { display: flex; flex-direction: column; gap: 16px; }
+.feat { display: flex; gap: 14px; align-items: flex-start; background: var(--white); padding: 18px 20px; border-radius: 8px; border: 1px solid var(--gray-light); transition: border-color 0.2s, box-shadow 0.2s; }
+.feat:hover { border-color: var(--navy); box-shadow: 0 4px 16px rgba(30,34,130,0.08); }
+.feat-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex-shrink: 0; margin-top: 6px; }
+.feat-title { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
+.feat-desc { font-size: 13px; font-weight: 300; color: var(--gray); line-height: 1.6; }
+
+/* PRODUCTS */
+.products { background: var(--white); }
+.products-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 16px; }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { background: var(--off-white); border-radius: 10px; border: 1px solid var(--gray-light); padding: 28px; transition: all 0.25s; cursor: pointer; display: block; text-decoration: none; overflow: hidden; }
+.product-card:hover { background: var(--white); border-color: var(--navy); box-shadow: 0 8px 30px rgba(30,34,130,0.1); transform: translateY(-2px); }
+.pc-num { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+.pc-title { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase; color: var(--navy); margin-bottom: 10px; line-height: 1.1; }
+.pc-desc { font-size: 13px; font-weight: 300; color: var(--gray); line-height: 1.65; margin-bottom: 10px; }
+.pc-models { font-size: 11px; font-weight: 500; color: var(--navy); letter-spacing: 0.05em; }
+
+/* PRODUCT FEATURE */
+.product-feature { background: var(--navy); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; margin-top: 32px; }
+.pf-img img { width: 100%; height: 100%; object-fit: cover; }
+.pf-content { padding: 48px 40px; }
+.pf-content .section-label { color: rgba(255,255,255,0.5); }
+.pf-content .section-label::before { background: rgba(255,255,255,0.3); }
+.pf-content .section-title { color: white; }
+.pf-content .section-body { color: rgba(255,255,255,0.6); }
+.pf-specs { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+.pf-spec { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.55); line-height: 1.5; }
+.pf-spec::before { content: ''; width: 4px; height: 4px; background: var(--red); border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+
+/* PATENTS */
+.patents { background: var(--navy); padding: 72px 5vw; }
+.patents .section-label { color: rgba(255,255,255,0.45); }
+.patents .section-label::before { background: rgba(255,255,255,0.25); }
+.patents .section-title { color: white; }
+.patents-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 40px; }
+.patent-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 20px; transition: background 0.2s; }
+.patent-card:hover { background: rgba(255,255,255,0.09); }
+.patent-num { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--red); margin-bottom: 6px; }
+.patent-name { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.8); margin-bottom: 4px; }
+.patent-date { font-size: 11px; color: rgba(255,255,255,0.3); }
+.patents-total { margin-top: 32px; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; }
+
+/* MOTORCYCLE */
+.moto-section { background: var(--off-white); }
+.moto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 48px; }
+.moto-img img { width: 100%; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+.moto-specs { display: flex; flex-direction: column; gap: 12px; }
+.moto-spec { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; background: var(--white); border-radius: 8px; border-left: 3px solid var(--red); }
+.ms-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy); margin-bottom: 2px; }
+.ms-val { font-size: 13px; font-weight: 300; color: var(--gray); }
+
+/* CLIENTS */
+.clients { background: var(--white); }
+.clients-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 40px; }
+.clients-sub { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.8; max-width: 500px; }
+.clients-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--gray-light); border-radius: 8px; overflow: hidden; }
+.client-tile { background: var(--white); padding: 22px 14px; text-align: center; transition: background 0.2s; }
+.client-tile:hover { background: var(--off-white); }
+.client-name { font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--navy); }
+.client-type { font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; }
+
+
+/* LEGACY */
+.legacy { background: var(--red); padding: 72px 5vw; }
+.legacy-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.legacy h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; text-transform: uppercase; line-height: 0.9; color: white; }
+.legacy h2 small { display: block; font-size: 0.4em; letter-spacing: 0.2em; font-weight: 400; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+.legacy-right p { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.8); line-height: 1.8; }
+.legacy-right p + p { margin-top: 1rem; }
+.legacy-right strong { font-weight: 600; color: white; }
+
+/* CONTACT */
+.contact { background: var(--off-white); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 52px; }
+.contact-info { display: flex; flex-direction: column; gap: 16px; }
+.contact-block { background: var(--white); border-radius: 8px; padding: 18px 20px; border: 1px solid var(--gray-light); }
+.cb-label { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
+.cb-val { font-size: 14px; font-weight: 400; color: var(--text); line-height: 1.7; }
+.cb-val a { color: var(--navy); text-decoration: none; }
+.plant-list { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+.plant { display: flex; gap: 8px; font-size: 13px; }
+.plant-num { font-weight: 700; color: var(--navy); min-width: 52px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+.plant-addr { color: var(--gray); font-weight: 300; font-size: 13px; }
+.phone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+.phone-chip { background: var(--off-white); border-radius: 4px; padding: 7px 10px; font-size: 12px; font-weight: 500; color: var(--navy); border: 1px solid var(--gray-light); }
+.contact-form { display: flex; flex-direction: column; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); }
+.form-group input, .form-group textarea, .form-group select { background: var(--white); border: 1px solid var(--gray-light); border-radius: 6px; padding: 11px 14px; font-family: 'Barlow', sans-serif; font-size: 14px; color: var(--text); transition: border-color 0.2s; outline: none; resize: vertical; }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--navy); }
+.form-group select option { background: white; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.btn-submit { background: var(--navy); color: white; border: none; padding: 14px 28px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: background 0.2s; align-self: flex-start; }
+.btn-submit:hover { background: var(--navy-dark); }
+
+/* FOOTER */
+footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid var(--red); }
+.footer-top { display: grid; grid-template-columns: 2.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 24px; }
+.footer-logo { margin-bottom: 16px; }
+.footer-logo img { height: 44px; filter: brightness(0) invert(1); display: block; }
+.footer-tagline-accent { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--red); margin-bottom: 6px; }
+.footer-tagline { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 240px; }
+.footer-mission { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.07); font-size: 11.5px; font-style: italic; color: rgba(255,255,255,0.22); line-height: 1.5; }
+.footer-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+.footer-cert { display: flex; gap: 8px; align-items: center; font-size: 11px; color: rgba(255,255,255,0.3); flex-wrap: wrap; }
+.cert-badge { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 9px; font-weight: 700; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 2px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.32);
+}
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+
+/* HAMBURGER */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: 104px; left: 0; right: 0; background: var(--white); border-bottom: 2px solid var(--red); z-index: 99; padding: 16px 5vw; flex-direction: column; gap: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--gray-light); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--red); }
+
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .about-grid, .clients-header, .legacy-inner, .contact-grid, .moto-grid { grid-template-columns: 1fr; gap: 40px; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .product-feature { grid-template-columns: 1fr; }
+  .clients-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+
+@media (max-width: 600px) {
+  /* Info bar */
+  .info-bar-phones { display: none !important; }
+  .info-bar-mobile { display: flex !important; }
+
+  /* Nav */
+  nav { height: 56px; top: 36px; }
+  .nav-logo img { height: 40px; }
+  .mobile-menu { top: 92px; }
+
+  /* Hero */
+  .hero { padding: 80px 5vw 32px; gap: 24px; min-height: auto; margin-top: 36px; }
+  .hero h1 { font-size: clamp(36px, 10vw, 52px); }
+  .hero p { font-size: 14px; }
+  .hero-mission { font-size: 12px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 14px 20px; }
+  .hero-stats { gap: 1.2rem; flex-wrap: wrap; margin-top: 1.2rem; padding-top: 1.2rem; }
+  .stat-val { font-size: 28px; }
+
+  /* Sections */
+  section { padding: 56px 5vw; }
+  .legacy { padding: 56px 5vw; }
+  .legacy-inner { gap: 32px; }
+  .legacy h2 { font-size: clamp(36px, 10vw, 56px); }
+  .legacy-right p { font-size: 15px; }
+
+  /* Products */
+  .products-grid { grid-template-columns: 1fr; }
+  .pf-content { padding: 28px 20px; }
+
+  /* Patents */
+  .patents-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Clients */
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Cert bar */
+  .cert-bar { gap: 12px; justify-content: flex-start; }
+  .cert-item { font-size: 12px; }
+
+  /* Contact */
+  .form-row { grid-template-columns: 1fr; }
+  .phone-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Video */
+  .video-section-inner { padding: 28px 5vw; }
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;background:#1E2282;padding:6px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;">
+  <div class="info-bar-phones" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+    <a href="tel:+911140527350" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 11-40527350/51/52/53/54</a>
+    <a href="tel:+911204117740" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 120-4117740</a>
+    <a href="tel:+919810811668" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 9810811668</a>
+    <span style="color:rgba(255,255,255,0.85);font-size:12px;font-weight:500;">✉ grandinfo2004&#64;gmail.com</span>
+  </div>
+  <a class="info-bar-mobile" href="tel:+919810811668" style="display:none;color:rgba(255,255,255,0.9);text-decoration:none;font-size:13px;font-weight:600;">📞 +91 9810811668</a>
+  <a href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" style="background:#25D366;color:white;padding:4px 14px;border-radius:20px;text-decoration:none;font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px;">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<nav>
+  <a href="#home" class="nav-logo"><img src="images/logo.png" alt="GRAND by IJS Electronics" style="height:54px; width:auto;"></a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="ambulance.html">Ambulance AIS 125</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" type="button" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+  <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+  <a href="exhibitions.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Exhibitions</a>
+  <a href="products.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Products</a>
+  <a href="ambulance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Ambulance AIS 125</a>
+  <a href="#clients" onclick="document.getElementById('mobileMenu').classList.remove('open')">Clients</a>
+  <a href="#contact" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact Us</a>
+</div>
+
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge"><div class="hero-badge-dot"></div>Established 1981 · ISO 9001:2015 Certified</div>
+    <div class="hero-tagline">Innovation · Excellence · Reliability · Trust</div>
+    <h1>India's <span class="accent">Pioneer</span> in<br>Emergency Warning<br>Since 1981</h1>
+    <p>Founded by S. Indarjit Singh Chhabra and expanded under Jaspal Singh Chhabra, GRAND has been manufacturing world-class Emergency Vehicle Warning Products and PA Systems since 1981 — trusted from the President's escort to every state police force in India.</p>
+    <div class="hero-mission">"We build products as if someone's life depends on it."<br>— Jaspal Singh Chhabra, Managing Director</div>
+    <div class="hero-actions">
+      <a href="products.html" class="btn-primary">View Products</a>
+      <a href="#contact" class="btn-outline">Get a Quote</a>
+    </div>
+    <div class="hero-stats" style="color:#1E2282;">
+      <div>
+        <div class="stat-val"><span class="years-counter"></span></div>
+        <div class="stat-lbl">Years of Innovation</div>
+      </div>
+      <div>
+        <div class="stat-val">29</div>
+        <div class="stat-lbl">Design Patents</div>
+      </div>
+      <div>
+        <div class="stat-val">1<sup>st</sup></div>
+        <div class="stat-lbl">Light Bar Mfr in India</div>
+      </div>
+      <div>
+        <div class="stat-val">3</div>
+        <div class="stat-lbl">Manufacturing Plants</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="images/Cluster.png" alt="GRAND Emergency Warning Products" style="width:100%;">
+      <div class="hero-img-caption">Marsvoice Series II · Patented Design · 3 Year Warranty</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- VIDEO SECTION -->
+<section style="background:var(--navy); padding:40px 5vw; position:relative; overflow:hidden; box-sizing:border-box;">
+  <div style="text-align:center; margin-bottom:18px;">
+    <div style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); margin-bottom:8px; display:flex; align-items:center; justify-content:center; gap:8px;">
+      <span style="width:20px;height:2px;background:var(--red);display:inline-block;"></span>
+      GRAND in Action
+      <span style="width:20px;height:2px;background:var(--red);display:inline-block;"></span>
+    </div>
+    <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(26px,3.5vw,42px); font-weight:800; text-transform:uppercase; color:white; line-height:1;">
+      Trusted by India's <span style="color:var(--red);">Most Important Fleets</span>
+    </h2>
+    <p style="font-size:14px; font-weight:300; color:rgba(255,255,255,0.5); margin-top:10px; max-width:560px; margin-left:auto; margin-right:auto; line-height:1.6;">
+      News clippings, drone footage, VIP convoys, flag-offs and deployments — GRAND products seen in action across India.
+    </p>
+  </div>
+  <div style="max-width:900px; width:100%; margin:0 auto; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); background:#000; position:relative;">
+    <div style="position:relative; padding-bottom:50%; height:0; overflow:hidden;">
+      <iframe
+        id="grand-video"
+        title="GRAND in Action video"
+        loading="lazy"
+        src="https://www.youtube-nocookie.com/embed/C9NaUaAgRL0?autoplay=1&mute=1&loop=1&playlist=C9NaUaAgRL0&controls=1&rel=0&modestbranding=1&start=130"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <span class="strip-item">LED Light Bars</span>
+  <span class="strip-item">PA / Siren Amplifiers</span>
+  <span class="strip-item">Revolving Lights</span>
+  <span class="strip-item">Ambulance AIS 125 Systems</span>
+  <span class="strip-item">Alertronic Community Sirens</span>
+  <span class="strip-item">Motorcycle Systems</span>
+  <span class="strip-item">LED Flashing Lights</span>
+  <span class="strip-item">Highway Sign Boards</span>
+  <span class="strip-item">Search Lights</span>
+</div>
+
+<div class="cert-bar">
+  <div class="cert-item"><div class="cert-icon">ISO<br>9001</div> ISO 9001:2015 Certified</div>
+  <div class="cert-item"><div class="cert-icon" style="font-size:7px;">29<br>PAT</div> 29 Registered Design Patents</div>
+  <div class="cert-item"><div class="cert-icon" style="font-size:7px;">OEM</div> OEM: Maruti &amp; More</div>
+  <div class="cert-item"><div class="cert-icon" style="font-size:7px;">AIS<br>125</div> Ambulance AIS 125 Compliant</div>
+  <div class="cert-item"><div class="cert-icon" style="font-size:7px;">1&amp;3<br>YR</div> 1 to 3 Year Warranty</div>
+</div>
+
+<section class="about" style="" id="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">A Legacy of Excellence Since 1981</h2>
+      <p class="section-body">GRAND by IJS Electronics (ISO 9001:2015) has been a trusted pioneer in Emergency Vehicle Warning Products and Public Address Systems since 1981. Founded by S. Indarjit Singh Chhabra and expanded under Jaspal Singh Chhabra, we introduced India's first integrated Emergency Light Bar + PA/Siren System in 1988. With <span class="years-counter"></span> years of excellence and 29 design patents, GRAND is the go-to brand for police, fire, ambulance, and disaster response solutions.</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">1981</div>
+          <div class="tl-content">
+            <div class="tl-title">Founded in New Delhi</div>
+            <div class="tl-desc">S. Indarjit Singh Chhabra establishes IJS Electronics in Delhi — bringing 35 years of expertise from Ahuja's Audio Centre, Chandni Chowk, to build a world-class Public Address System manufacturer.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1988</div>
+          <div class="tl-content">
+            <div class="tl-title">First Light Bar in India</div>
+            <div class="tl-desc">Jaspal Singh introduces the Emergency Light Bar cum PA/Siren System concept — a first in India — under the GRAND brand.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2000</div>
+          <div class="tl-content">
+            <div class="tl-title">LED Technology Pioneer</div>
+            <div class="tl-desc">Introduced LED Flashing Lights and LED Light Bars for the first time in India.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2010</div>
+          <div class="tl-content">
+            <div class="tl-title">GRAND Designs & ER One</div>
+            <div class="tl-desc">Launched exclusive emergency vehicle design studio and the ER One Emergency Response Vehicle. Introduced Alertronic Differential Sound Siren.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025</div>
+          <div class="tl-content">
+            <div class="tl-title">29 Patents &amp; Counting</div>
+            <div class="tl-desc">IJS Electronics now holds 29 design patents, operates 3 manufacturing plants, and supplies India's most critical emergency fleets.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div>
+          <div class="feat-title">ISO 9001:2015 Quality Certified</div>
+          <div class="feat-desc">International quality management certification ensuring zero-defect manufacturing and nil failure rates under warranty. Products carry 1 to 3 year warranties depending on model.</div>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div>
+          <div class="feat-title">29 Registered Design Patents</div>
+          <div class="feat-desc">Over decades of R&D, GRAND holds 29 Government of India design patents for unique product designs including LED Light Bars, LED Disc, LED Disc Tower, Rotating Lights, and Speakers.</div>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div>
+          <div class="feat-title">Ambulance AIS 125 Compliant</div>
+          <div class="feat-desc">Products fully compliant with India's AIS 125 automotive standards for ambulance warning systems. Approved by Maruti, Tata Motors, Force Motors, and Ashok Leyland for factory-fit ambulances.</div>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div>
+          <div class="feat-title">Delhi &amp; Noida Facilities</div>
+          <div class="feat-desc">State-of-the-art 20,000 sq. ft. facilities in Delhi &amp; Noida supply major government tenders, OEM partners including Tata Motors, Force Motors, and Maruti Suzuki, and emergency service departments across India.</div>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div>
+          <div class="feat-title">Presidential to State Level Deployment</div>
+          <div class="feat-desc">GRAND products are trusted by President of India pilot vehicles, Prime Minister escort fleets, all major state Police, Fire, and Ambulance departments across India.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" style="" id="products">
+  <div class="products-header">
+    <div>
+      <div class="section-label">Product Range</div>
+      <h2 class="section-title">Built for the Field.<br>Engineered to Last.</h2>
+    </div>
+    <a href="#contact" class="btn-primary" style="align-self:flex-end; background:var(--navy);">Request Catalogue</a>
+  </div>
+  <div class="products-grid">
+    <a class="product-card" href="products.html#ef2">
+      <img src="images/products/ef-2-42s-rwb.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">01</div>
+      <div class="pc-title">Ef-2 Series<br>LED Light Bars</div>
+      <div class="pc-models">Ef-2 30RWB · Ef-2 32S RWB · Ef-2 42S RWB · Ef-2 47S RWB · Ef-2 Dhanush · Ef-2 Slim Series</div>
+    </a>
+    <a class="product-card" href="products.html#efone">
+      <img src="images/products/ef-one-30-rbw.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">02</div>
+      <div class="pc-title">Ef-One Series<br>LED Light Bars</div>
+      <div class="pc-models">Ef-One 8M · Ef-One 14M · Ef-One 22M · Ef-One 30 · Ef-One 39 DP · Sleek Series</div>
+    </a>
+    <a class="product-card" href="products.html#marsvoice">
+      <img src="images/products/marsvoice-series-ii-rbw-wm.jpg" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">03 · <span style="color:var(--navy);font-style:italic;">Patented Design</span></div>
+      <div class="pc-title">Marsvoice &amp;<br>CometVoice Series</div>
+      <div class="pc-models">Marsvoice II RBW · Marsvoice II AA · Marsvoice II RBWC · CometVoice</div>
+    </a>
+    <a class="product-card" href="products.html#sirens">
+      <img src="images/products/GPA-300 Digital.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">04</div>
+      <div class="pc-title">Siren / Speaker /<br>PA Amplifier</div>
+      <div class="pc-models">GES · GUH · GEH · GPA-300 · GPA-100USB · GPA-50BL · GPA-200 · Pursuitlite</div>
+    </a>
+    <a class="product-card" href="products.html#revolving">
+      <img src="images/products/GM-103.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">05</div>
+      <div class="pc-title">Revolving &amp;<br>Flashing Lights</div>
+      <div class="pc-models">GM-101 · GM-103 · GM-109 · GM-901 · GM-108 · LED Pole Light</div>
+    </a>
+    <a class="product-card" href="products.html#ambulance">
+      <img src="images/products/Marsvoice Series-II 4L.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">06 · <span style="color:var(--navy);font-style:italic;">AIS 125 Compliant</span></div>
+      <div class="pc-title">Ambulance AIS 125<br>Systems</div>
+      <div class="pc-models">Ef-2 42S 4L · Ef-2 32S 4L · Marsvoice II 4L · GPA 300 · GPA 100 USB</div>
+    </a>
+    <a class="product-card" href="products.html#grandblack">
+      <img src="images/products/BBG 40 BellBird Siren.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">07</div>
+      <div class="pc-title">GRAND BLACK<br>BellBird Series</div>
+      <div class="pc-models">BBG 40 · BBG 50 · BBG 100 PA · BBG 200 PA · BBG 400 PA Split</div>
+    </a>
+    <a class="product-card" href="products.html#highway">
+      <img src="images/products/Highway LEd Sign.png" alt="" style="width:calc(100% + 56px); margin:-28px -28px 20px -28px; height:180px; object-fit:contain; background:#f4f6fa; display:block;">
+      <div class="pc-num">08</div>
+      <div class="pc-title">Highway<br>Products</div>
+      <div class="pc-models">GHFS 2143 Solar Flasher · Highway LED Signs · Moving Sign Board · GM20S · WL-100</div>
+    </a>
+  </div>
+
+  <div class="product-feature">
+    <div class="pf-img">
+      <img src="images/Cluster.png" alt="GRAND Emergency Warning System — Complete Package" style="width:100%;height:100%;object-fit:contain;background:#1E2282;">
+    </div>
+    <div class="pf-content">
+      <div class="section-label">Complete System</div>
+      <h3 class="section-title">Everything Your Emergency Vehicle Needs</h3>
+      <p class="section-body">The GRAND full package integrates a light bar, PA speaker, revolving beacon, and siren amplifier — one complete, field-proven solution trusted by India's emergency services for over <span class="years-counter"></span> years.</p>
+      <div class="pf-specs">
+        <div class="pf-spec">Marsvoice or Ef-Series LED Light Bar with integrated speaker grille</div>
+        <div class="pf-spec">Hi-Power PA Siren Amplifier (40W–200W) with multi-tone 5 siren options</div>
+        <div class="pf-spec">Unit Horn Speaker GUH-50 (50W) with mounting bracket</div>
+        <div class="pf-spec">Red/Blue revolving beacon for rooftop pole mounting</div>
+        <div class="pf-spec">Handset microphone with coiled cord, Volume and Light control panel</div>
+        <div class="pf-spec">Input: 12V DC / Current drain: 2.2–3 Amp / Warranty: 1–3 years</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="patents" style="" id="patents">
+  <div class="section-label">Intellectual Property</div>
+  <h2 class="section-title">29 Registered<br>Design Patents</h2>
+  <p class="section-body" style="color:rgba(255,255,255,0.55);">IJS Electronics has been innovating for over four decades — protecting its unique designs through the Government of India Patent Office.</p>
+  <div class="patents-grid">
+    <div class="patent-card">
+      <div class="patent-num">228001</div>
+      <div class="patent-name">Speaker Design</div>
+      <div class="patent-date">Class 14-01 · 23 Mar 2010</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">228002</div>
+      <div class="patent-name">LED Flash Light</div>
+      <div class="patent-date">Class 26-04 · 23 Mar 2010</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">224626</div>
+      <div class="patent-name">Rotating Light</div>
+      <div class="patent-date">Class 26-04 · 08 Sep 2009</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">228004</div>
+      <div class="patent-name">LED Flash Light II</div>
+      <div class="patent-date">Class 26-04 · 23 Mar 2010</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">220722</div>
+      <div class="patent-name">LED Disc</div>
+      <div class="patent-date">Class 26-04 · 9 Jan 2009</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">220723</div>
+      <div class="patent-name">LED Disc Tower</div>
+      <div class="patent-date">Class 26-04 · 9 Jan 2009</div>
+    </div>
+    <div class="patent-card">
+      <div class="patent-num">227997</div>
+      <div class="patent-name">Rotating Spot Light</div>
+      <div class="patent-date">Class 26-04 · 23 Mar 2010</div>
+    </div>
+    <div class="patent-card" style="background:rgba(204,31,38,0.15); border-color:rgba(204,31,38,0.3);">
+      <div class="patent-num" style="color:rgba(255,255,255,0.5);">+22</div>
+      <div class="patent-name" style="color:rgba(255,255,255,0.6);">More Patents</div>
+      <div class="patent-date">Registered with Govt. of India</div>
+    </div>
+  </div>
+  <div class="patents-total">Total: 29 Registered Design Patents · Government of India Patent Office, Kolkata</div>
+</section>
+
+<section class="moto-section" style="" id="motorcycle">
+  <div class="section-label">Specialized Systems</div>
+  <h2 class="section-title">Police Motorcycle<br>Warning Systems</h2>
+  <div class="moto-grid">
+    <div class="moto-img">
+      <img src="images/catalogue-cover.jpg" alt="GRAND Police Motorcycle Warning System">
+    </div>
+    <div>
+      <p class="section-body" style="margin-bottom:2rem;">GRAND's Hi-Power GEN-III LED Motorcycle System equips police patrol bikes for Delhi Police, Maharashtra Traffic Police, Military Police, and Highway Patrol — aerodynamic, powerful, and fully integrated.</p>
+      <div class="moto-specs">
+        <div class="moto-spec">
+          <div>
+            <div class="ms-label">GEN-III Hi-Power LED Lights</div>
+            <div class="ms-val">Front-mounted 1W LED warning lights with multiple flash patterns — visible in daylight</div>
+          </div>
+        </div>
+        <div class="moto-spec">
+          <div>
+            <div class="ms-label">Hi-Power PA / Siren System</div>
+            <div class="ms-val">Compact Pursuitlite amplifier with speaker, 3 siren tones (Wail, Yelp), light bar control switch</div>
+          </div>
+        </div>
+        <div class="moto-spec">
+          <div>
+            <div class="ms-label">Helmet Integrated Cordless Mic</div>
+            <div class="ms-val">Wireless microphone built into rider's helmet — hands-free PA while riding</div>
+          </div>
+        </div>
+        <div class="moto-spec">
+          <div>
+            <div class="ms-label">Rear Pole LED + Challan Light</div>
+            <div class="ms-val">Rear-facing warning pole and LED Challan Light for traffic management and enforcement</div>
+          </div>
+        </div>
+        <div class="moto-spec">
+          <div>
+            <div class="ms-label">Compatible Bikes</div>
+            <div class="ms-val">Royal Enfield · TVS · Bajaj · Hero · Honda CBR · Yamaha — all major police fleet models</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOGUE DOWNLOAD -->
+<section style="background:var(--navy);padding:60px 5vw;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+  <div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:0.5rem;">Product Catalogue</div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(24px,3vw,36px);font-weight:800;text-transform:uppercase;color:white;line-height:1.1;margin-bottom:0.75rem;">The Complete GRAND Range</div>
+    <div style="font-size:15px;font-weight:300;color:rgba(255,255,255,0.6);max-width:480px;">LED light bars, PA systems, sirens, revolving lights, motorcycle kits, ambulance equipment and more — all in one document.</div>
+  </div>
+  <a href="catalogue.pdf" download style="display:inline-flex;align-items:center;gap:10px;background:var(--red);color:white;padding:16px 32px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download Catalogue
+  </a>
+</section>
+
+<section class="clients" style="" id="clients">
+  <div class="clients-header">
+    <div>
+      <div class="section-label">Trusted By</div>
+      <h2 class="section-title">The Forces That<br>Protect India</h2>
+    </div>
+    <p class="clients-sub">From the President of India's pilot vehicles to every state's police force — GRAND is India's most trusted emergency warning brand.</p>
+  </div>
+  <div class="clients-grid">
+    <div class="client-tile"><div class="client-name">President's Fleet</div><div class="client-type">Pilot & Escort Vehicles</div></div>
+    <div class="client-tile"><div class="client-name">Police Depts.</div><div class="client-type">State &amp; Central</div></div>
+    <div class="client-tile"><div class="client-name">Fire Brigade</div><div class="client-type">Municipal Bodies</div></div>
+    <div class="client-tile"><div class="client-name">Ambulance</div><div class="client-type">108 · CATS · GVK EMRI</div></div>
+    <div class="client-tile"><div class="client-name">Defence &amp; VIP</div><div class="client-type">Indian Air Force · NSG</div></div>
+    <div class="client-tile"><div class="client-name">Maruti Suzuki India Ltd</div></div>
+    <div class="client-tile"><div class="client-name">Tata Motors</div></div>
+    <div class="client-tile"><div class="client-name">Force Motors</div></div>
+    <div class="client-tile"><div class="client-name">Ashok Leyland</div></div>
+    <div class="client-tile"><div class="client-name">NHAI</div><div class="client-type">Highway Management</div></div>
+    <div class="client-tile"><div class="client-name">Hero Honda</div><div class="client-type">Police Motorcycles</div></div>
+    <div class="client-tile"><div class="client-name">Royal Enfield</div><div class="client-type">Police Motorcycles</div></div>
+    <div class="client-tile"><div class="client-name">Bajaj Auto</div><div class="client-type">Police Motorcycles</div></div>
+    <div class="client-tile"><div class="client-name">Civil Defence</div><div class="client-type">Alertronic Systems</div></div>
+    <div class="client-tile"><div class="client-name">DDMA</div><div class="client-type">Disaster Management</div></div>
+    <div class="client-tile"><div class="client-name">Volvo</div><div class="client-type">Emergency Vehicles</div></div>
+  </div>
+</section>
+
+<div class="legacy" style="">
+  <div class="legacy-inner">
+    <h2><small>Recognized as</small>Second to<br>None in<br>the World.</h2>
+    <div class="legacy-right">
+      <p>The <strong>Marsvoice Series II LED Emergency Light Bar</strong> — GRAND's patented flagship — is recognized as the most effective emergency warning system produced in India, and among the finest manufactured anywhere in the world.</p>
+      <p>With <strong>29 patents, <span class="years-counter"></span> years of innovation</strong>, and products in service from the corridors of Rashtrapati Bhavan to India's furthest highways — IJS Electronics' mission remains unchanged:</p>
+      <p style="font-style:italic; color:rgba(255,255,255,0.95);">"To make life safer for those who save lives."</p>
+    </div>
+  </div>
+</div>
+
+<section class="contact" style="" id="contact">
+  <div class="section-label">Get In Touch</div>
+  <h2 class="section-title">Request a Quote or<br>Product Enquiry</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-block">
+        <div class="cb-label">Manufacturing Plants</div>
+        <div class="plant-list">
+          <div class="plant"><span class="plant-num">Plant 1 HQ</span><span class="plant-addr">D-39, Sector 6, Noida, Uttar Pradesh – 201301</span></div>
+          <div class="plant"><span class="plant-num">Plant 2</span><span class="plant-addr">New Delhi – 110044</span></div>
+          <div class="plant"><span class="plant-num">Plant 3</span><span class="plant-addr">Gandhi Nagar, Gujarat – 382424</span></div>
+
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="cb-label">Phone</div>
+        <div class="phone-grid">
+          <div class="phone-chip">+91 120-4117740</div>
+          <div class="phone-chip">011-40527350/51/52/53/54</div>
+          
+          
+          <div class="phone-chip">+91 9810811668</div>
+          
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="cb-label">Email &amp; Web</div>
+        <div class="cb-val">
+          <a href="mailto:grandinfo2004@gmail.com">grandinfo2004@gmail.com</a><br>
+          <a href="https://www.grandwarninglights.in">www.grandwarninglights.in</a>
+        </div>
+      </div>
+      <div class="contact-block" style="background:var(--navy); border-color:var(--navy);">
+        <div class="cb-label" style="color:rgba(255,255,255,0.45);">We Supply To</div>
+        <div class="cb-val" style="color:rgba(255,255,255,0.7); font-size:13px;">Government departments · OEM partners · Defence organisations · NHAI · Private hospital ambulance fleets — throughout India and internationally.</div>
+      </div>
+    </div>
+    <form class="contact-form" action="contact.php" method="POST">
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Full name" required></div>
+        <div class="form-group"><label>Organisation</label><input type="text" name="org" placeholder="Department / Company"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="you@example.com" required></div>
+        <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="form-group">
+        <label>Enquiry Type</label>
+        <select name="type">
+          <option value="">Select category</option>
+          <option>LED Light Bar Enquiry</option>
+          <option>PA / Siren Amplifier</option>
+          <option>Ambulance AIS 125 System</option>
+          <option>Police Motorcycle System</option>
+          <option>Alertronic Community Siren</option>
+          <option>Bulk / Tender Order</option>
+          <option>OEM / Partnership</option>
+          <option>After Sales / Warranty</option>
+          <option>General Information</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea rows="5" name="message" placeholder="Describe your requirements, quantity, and application..."></textarea></div>
+      <button type="submit" class="btn-submit">Send Enquiry →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="images/grand-logo-clean.png" alt="GRAND Logo"></div>
+      <div class="footer-tagline-accent">Innovation · Excellence · Reliability · Trust</div>
+      <div class="footer-tagline">IJS Electronics · Manufacturers since 1981<br>Noida &amp; New Delhi, India</div>
+      <div class="footer-mission">"To make life safer for those who save lives."</div>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html#ef2">Ef-2 Series</a></li>
+        <li><a href="products.html#efone">Ef-One Series</a></li>
+        <li><a href="products.html#sirens">PA / Siren Systems</a></li>
+        <li><a href="products.html#revolving">Revolving Lights</a></li>
+        <li><a href="products.html#ambulance">Ambulance LED AIS 125</a></li>
+        <li><a href="products.html#motorcycle">Motorcycle Systems</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Credentials</h4>
+      <ul>
+        <li>ISO 9001:2015</li>
+        <li>29 Design Patents</li>
+        <li>AIS 125 Compliant</li>
+        <li>OEM Approved</li>
+        <li>1–3 Year Warranty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 IJS Electronics. All rights reserved. | D-39 Sector 6, Noida</div>
+    <div class="footer-cert">
+      <span class="cert-badge">ISO 9001:2015</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Sticky Button -->
+<a class="whatsapp-float" href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.77L0 32l8.476-2.004A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.791-1.864l-.487-.29-5.03 1.189 1.212-4.898-.318-.502A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.161-2.72-1.294-.366-.133-.632-.199-.898.2-.266.398-1.031 1.294-1.264 1.56-.233.266-.465.299-.863.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.213-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.2-.233.266-.399.399-.665.133-.266.066-.499-.034-.698-.1-.2-.898-2.163-1.231-2.963-.324-.778-.653-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.064.499-.366.398-1.396 1.362-1.396 3.323s1.43 3.855 1.629 4.121c.2.266 2.815 4.298 6.822 6.028.954.411 1.698.657 2.279.841.957.305 1.829.262 2.517.159.768-.114 2.354-.962 2.687-1.892.333-.93.333-1.727.233-1.892-.1-.166-.366-.266-.764-.465z"/>
+  </svg>
+</a>
+
+<script src="site.js" defer></script>
+<script>
+document.querySelectorAll('.years-counter').forEach(function(el) {
+  var now = new Date();
+  var years = now.getFullYear() - 1981;
+  if (now.getMonth() < 9) years--;
+  el.textContent = years + '+';
+});
+</script>
+</body>
+</html>

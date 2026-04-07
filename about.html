@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story | GRAND by IJS Electronics</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="description" content="Four decades of building India's emergency warning systems. The story of IJS Electronics, the GRAND brand, and the man who built it — Jaspal Singh Chhabra, Managing Director.">
+<meta property="og:title" content="Our Story | GRAND by IJS Electronics">
+<meta property="og:description" content="Four decades of building India's emergency warning systems. The story of IJS Electronics and GRAND.">
+<meta property="og:image" content="https://grandwarninglights.in/images/JPS-Passport-Photo.jpg">
+<meta property="og:url" content="https://grandwarninglights.in/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GRAND by IJS Electronics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Story | GRAND by IJS Electronics">
+<meta name="twitter:description" content="Four decades of building India's emergency warning systems.">
+<meta name="twitter:image" content="https://grandwarninglights.in/images/JPS-Passport-Photo.jpg">
+<link rel="canonical" href="https://grandwarninglights.in/about.html">
+<meta name="theme-color" content="#1E2282">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1E2282;
+  --navy-dark: #141660;
+  --navy-light: #2B2FA8;
+  --red: #CC1F26;
+  --red-dark: #A01820;
+  --white: #FFFFFF;
+  --off-white: #F4F6FA;
+  --gray: #6B7280;
+  --gray-light: #E8ECF2;
+  --dark: #0D0E1A;
+  --text: #1A1B2E;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-logo img { height: 54px; width: auto; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-links a.active { color: var(--navy); }
+.nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: 4px !important; font-size: 12px !important; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--red-dark) !important; }
+
+/* HAMBURGER */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: 104px; left: 0; right: 0; background: var(--white); border-bottom: 2px solid var(--red); z-index: 99; padding: 16px 5vw; flex-direction: column; gap: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--gray-light); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--red); }
+
+/* SECTION BASE */
+section { padding: 90px 5vw; }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+.section-label::before { content: ''; width: 20px; height: 2px; background: var(--red); display: inline-block; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; text-transform: uppercase; line-height: 1; color: var(--navy); margin-bottom: 1.25rem; }
+.section-body { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.8; max-width: 660px; }
+
+/* HERO */
+.heritage-hero {
+  background: linear-gradient(rgba(14,17,65,0.82), rgba(14,17,65,0.92)), url('images/papaji 23.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  margin-top: 104px;
+  height: 400px;
+  padding: 80px 5vw 64px;
+  position: relative; overflow: hidden;
+  display: flex; align-items: flex-end;
+}
+.heritage-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 50% 70% at 90% 50%, rgba(204,31,38,0.14) 0%, transparent 60%);
+}
+.heritage-hero-inner { position: relative; z-index: 1; max-width: 760px; animation: fadeUp 0.7s 0.2s both; }
+.heritage-hero .section-label { color: rgba(255,255,255,0.5); }
+.heritage-hero .section-label::before { background: var(--red); }
+.heritage-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(48px, 6vw, 82px); font-weight: 800;
+  text-transform: uppercase; line-height: 0.95;
+  color: white; margin-bottom: 1.2rem;
+}
+.heritage-hero-sub {
+  font-size: 18px; font-weight: 300;
+  color: rgba(255,255,255,0.6); line-height: 1.7;
+  max-width: 580px; margin-bottom: 2rem;
+}
+.stat-pills { display: flex; gap: 12px; flex-wrap: wrap; }
+.stat-pill {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+  color: white; font-size: 13px; font-weight: 600;
+  letter-spacing: 0.06em; padding: 10px 22px; border-radius: 40px;
+}
+
+/* FOUNDING FAMILY */
+.founding-section { background: var(--off-white); }
+.founding-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.founding-body p { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.85; margin-bottom: 1.2rem; }
+.founding-body p:last-child { margin-bottom: 0; }
+.img-caption { font-size: 12px; font-weight: 400; color: var(--gray); text-align: center; margin-top: 12px; font-style: italic; }
+
+/* MANAGING DIRECTOR */
+.md-section { background: var(--white); }
+.md-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.founder-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gray); margin-bottom: 1.4rem;
+}
+.founder-quote {
+  font-size: 15px; font-style: italic; font-weight: 300;
+  color: var(--gray); border-left: 3px solid var(--red);
+  padding-left: 16px; margin-bottom: 1.8rem; line-height: 1.7;
+}
+.md-body p { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.85; margin-bottom: 1.2rem; }
+.md-body p:last-child { margin-bottom: 0; }
+.founder-img-wrap {
+  background: white;
+  border-radius: 16px; padding: 28px; position: relative;
+  box-shadow: 0 32px 80px rgba(30,34,130,0.14), 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 340px; width: 100%; margin: 0 auto;
+}
+.founder-img-wrap img { width: 100%; border-radius: 8px; display: block; }
+.founder-img-caption { margin-top: 14px; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); }
+
+/* MD STAT ROW */
+.md-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 3rem; }
+.story-stat { display: flex; gap: 14px; align-items: flex-start; background: var(--off-white); padding: 18px 20px; border-radius: 8px; border: 1px solid var(--gray-light); border-left: 3px solid var(--red); }
+.ss-val { font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); line-height: 1; }
+.ss-val sup { font-size: 14px; color: var(--red); }
+.ss-lbl { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
+
+/* TIMELINE */
+.timeline-section { background: var(--off-white); }
+.heritage-timeline { position: relative; margin-top: 3rem; padding-bottom: 4px; }
+.heritage-timeline::before {
+  content: ''; position: absolute;
+  left: 50%; top: 0; bottom: 0;
+  width: 2px; background: var(--gray-light);
+  transform: translateX(-50%);
+}
+.ht-item { position: relative; width: 50%; margin-bottom: 36px; }
+.ht-item.ht-left { padding-right: 56px; }
+.ht-item.ht-right { padding-left: 56px; margin-left: 50%; }
+.ht-dot {
+  position: absolute; top: 0;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--navy); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: 0.02em; text-align: center; line-height: 1.3;
+  border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--navy); z-index: 1;
+}
+.ht-item.ht-left .ht-dot { right: -28px; }
+.ht-item.ht-right .ht-dot { left: -28px; }
+.ht-dot.ht-red { background: var(--red); box-shadow: 0 0 0 2px var(--red); }
+.ht-content {
+  background: var(--white); border-radius: 8px;
+  padding: 18px 20px; border: 1px solid var(--gray-light);
+}
+.ht-item.ht-accent .ht-content {
+  background: rgba(204,31,38,0.02);
+  border: 1px solid rgba(204,31,38,0.2);
+  border-left: 4px solid var(--red);
+}
+.ht-year-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 5px; }
+.ht-title { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.ht-body { font-size: 13px; font-weight: 300; color: var(--gray); line-height: 1.7; }
+
+/* CERTIFICATIONS */
+.certs-section { background: var(--white); }
+.certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2.5rem; }
+.cert-card {
+  background: var(--off-white); border-radius: 10px;
+  padding: 28px 24px; border: 1px solid var(--gray-light);
+  border-top: 3px solid var(--navy);
+}
+.cert-name { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 8px; text-transform: uppercase; }
+.cert-desc { font-size: 14px; font-weight: 300; color: var(--gray); line-height: 1.7; }
+.certs-meta { margin-top: 24px; font-size: 12px; color: var(--gray); }
+.gem-pill {
+  display: inline-flex; align-items: center;
+  background: var(--navy); color: white;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+  padding: 6px 18px; border-radius: 20px; margin-top: 10px;
+}
+
+/* AWARDS */
+.awards-section { background: var(--off-white); }
+.award-card {
+  background: var(--navy); border-radius: 12px;
+  padding: 48px 48px; border-left: 5px solid var(--red);
+  display: grid; grid-template-columns: 1fr 260px; gap: 48px;
+  align-items: center; max-width: 900px; margin: 2.5rem auto 0;
+}
+.award-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(22px, 2.5vw, 30px); font-weight: 800;
+  text-transform: uppercase; color: white;
+  margin-bottom: 14px; line-height: 1.1;
+}
+.award-presented { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.75); margin-bottom: 6px; line-height: 1.6; }
+.award-published { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 18px; }
+.award-supporting { font-size: 14px; font-style: italic; font-weight: 300; color: rgba(255,255,255,0.45); line-height: 1.6; }
+
+/* PHILOSOPHY */
+.philosophy-section { background: var(--navy); padding: 90px 5vw; }
+.philosophy-section .section-label { color: rgba(255,255,255,0.45); }
+.philosophy-section .section-label::before { background: rgba(255,255,255,0.25); }
+.philosophy-section .section-title { color: white; }
+.philosophy-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.philosophy-quote {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 600; font-style: italic;
+  color: white; line-height: 1.4;
+  border-left: 4px solid var(--red);
+  padding-left: 24px;
+}
+.philosophy-quote cite {
+  display: block; margin-top: 20px;
+  font-size: 13px; font-style: normal; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.philosophy-right p {
+  font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.65); line-height: 1.9;
+}
+
+/* NUMBERS */
+.numbers-section { background: var(--white); }
+.numbers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 2.5rem; }
+.num-card {
+  background: var(--off-white); border-radius: 10px;
+  padding: 28px 24px; border: 1px solid var(--gray-light);
+  border-left: 3px solid var(--navy);
+}
+.num-val { font-family: 'Barlow Condensed', sans-serif; font-size: 44px; font-weight: 800; color: var(--navy); line-height: 1; margin-bottom: 8px; }
+.num-val sup { font-size: 22px; color: var(--red); }
+.num-lbl { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); line-height: 1.4; }
+.num-footnote { font-size: 11px; color: var(--gray); margin-top: 28px; font-style: italic; }
+
+/* CTA */
+.cta-section { background: var(--off-white); }
+.cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 2.5rem; }
+.cta-card {
+  background: var(--white); border-radius: 10px;
+  padding: 36px 32px; border: 1px solid var(--gray-light);
+  display: flex; flex-direction: column; gap: 14px;
+}
+.cta-card-title { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 700; text-transform: uppercase; color: var(--navy); }
+.cta-card-body { font-size: 14px; font-weight: 300; color: var(--gray); line-height: 1.7; flex: 1; }
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--navy); color: white;
+  padding: 12px 24px; border-radius: 4px; text-decoration: none;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.2s; align-self: flex-start;
+}
+.cta-btn:hover { background: var(--navy-dark); }
+.cta-btn.red { background: var(--red); }
+.cta-btn.red:hover { background: var(--red-dark); }
+
+/* FOOTER */
+footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid var(--red); }
+.footer-top { display: grid; grid-template-columns: 2.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 24px; }
+.footer-logo { margin-bottom: 16px; }
+.footer-logo img { height: 44px; filter: brightness(0) invert(1); display: block; }
+.footer-tagline-accent { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--red); margin-bottom: 6px; }
+.footer-tagline { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 240px; }
+.footer-mission { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.07); font-size: 11.5px; font-style: italic; color: rgba(255,255,255,0.22); line-height: 1.5; }
+.footer-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-col li { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+.footer-cert { display: flex; gap: 8px; align-items: center; font-size: 11px; color: rgba(255,255,255,0.3); flex-wrap: wrap; }
+.cert-badge { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 9px; font-weight: 700; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 2px; }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+  width: 58px; height: 58px; border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s; text-decoration: none;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 22px rgba(0,0,0,0.32); }
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+
+@media (max-width: 1000px) {
+  .founding-grid, .md-grid, .cta-grid, .philosophy-inner { grid-template-columns: 1fr; gap: 40px; }
+  .certs-grid, .numbers-grid { grid-template-columns: 1fr 1fr; }
+  .award-card { grid-template-columns: 1fr; }
+  .md-stats-row { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .heritage-timeline::before { left: 27px; transform: none; }
+  .ht-item { width: 100%; padding-left: 72px !important; padding-right: 0 !important; margin-left: 0 !important; }
+  .ht-item .ht-dot { left: 0 !important; right: auto !important; }
+}
+@media (max-width: 600px) {
+  .info-bar-phones { display: none !important; }
+  .info-bar-mobile { display: flex !important; }
+  nav { height: 56px; top: 36px; }
+  .nav-logo img { height: 40px; }
+  .mobile-menu { top: 92px; }
+  .heritage-hero, .products-hero, .exh-hero { height: auto; min-height: 0; }
+  .heritage-hero { padding: 72px 5vw 48px; margin-top: 92px; }
+  section { padding: 56px 5vw; }
+  .philosophy-section { padding: 56px 5vw; }
+  .certs-grid, .numbers-grid, .md-stats-row { grid-template-columns: 1fr; }
+  .award-card { padding: 28px 24px; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+/* PHOTO STRIPS */
+.photo-hero-strip { width: 100%; overflow: hidden; display: block; line-height: 0; }
+.photo-hero-strip img { width: 100%; height: 520px; object-fit: cover; object-position: center top; filter: grayscale(100%); display: block; }
+.photo-strip-full { width: 100%; display: block; height: 350px; max-height: 350px; object-fit: contain; background: #111; filter: grayscale(100%); }
+.photo-strip-2col { display: grid; grid-template-columns: 1fr 1fr; line-height: 0; }
+.photo-strip-2col img { width: 100%; height: 440px; object-fit: cover; object-position: center top; filter: grayscale(100%); display: block; }
+
+/* GALLERY */
+.gallery-section { background: var(--navy); padding: 90px 5vw; }
+.gallery-section .section-label { color: rgba(255,255,255,0.5); }
+.gallery-section .section-label::before { background: var(--red); }
+.gallery-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(36px,5vw,64px); font-weight: 800; text-transform: uppercase; line-height: 1; color: white; margin-bottom: 2rem; }
+.masonry-grid { columns: 4; column-gap: 8px; }
+.masonry-item { break-inside: avoid; margin-bottom: 8px; cursor: pointer; overflow: hidden; display: block; line-height: 0; }
+.masonry-item img { width: 100%; display: block; filter: grayscale(100%); transition: filter 0.3s, transform 0.3s; }
+.masonry-item:hover img { filter: grayscale(40%); transform: scale(1.02); }
+
+/* LIGHTBOX */
+.lb-overlay { display: none; position: fixed; inset: 0; z-index: 9900; background: rgba(0,0,0,0.93); align-items: center; justify-content: center; }
+.lb-overlay.open { display: flex; }
+.lb-overlay img { max-width: 90vw; max-height: 90vh; object-fit: contain; filter: grayscale(100%); }
+.lb-close { position: absolute; top: 20px; right: 28px; color: white; font-size: 40px; line-height: 1; cursor: pointer; background: none; border: none; font-family: 'Barlow Condensed', sans-serif; }
+
+@media (max-width: 1000px) {
+  .masonry-grid { columns: 2; }
+  .photo-strip-2col { grid-template-columns: 1fr; }
+  .photo-strip-2col img { height: 320px; }
+  .photo-strip-full { height: 280px; max-height: 280px; }
+}
+@media (max-width: 600px) {
+  .masonry-grid { columns: 1; }
+  .photo-hero-strip img { height: 280px; }
+  .photo-strip-2col img { height: 240px; }
+  .photo-strip-full { height: 220px; max-height: 220px; }
+}
+</style>
+</head>
+<body>
+
+<!-- INFO BAR -->
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;background:#1E2282;padding:6px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;">
+  <div class="info-bar-phones" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+    <a href="tel:+911140527350" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 11-40527350/51/52/53/54</a>
+    <a href="tel:+911204117740" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 120-4117740</a>
+    <a href="tel:+919810811668" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 9810811668</a>
+    <span style="color:rgba(255,255,255,0.85);font-size:12px;font-weight:500;">✉ grandinfo2004&#64;gmail.com</span>
+  </div>
+  <a class="info-bar-mobile" href="tel:+919810811668" style="display:none;color:rgba(255,255,255,0.9);text-decoration:none;font-size:13px;font-weight:600;">📞 +91 9810811668</a>
+  <a href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" style="background:#25D366;color:white;padding:4px 14px;border-radius:20px;text-decoration:none;font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px;">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="GRAND by IJS Electronics" style="height:54px; width:auto;"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="ambulance.html">Ambulance AIS 125</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" type="button" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+  <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+  <a href="exhibitions.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Exhibitions</a>
+  <a href="products.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Products</a>
+  <a href="ambulance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Ambulance AIS 125</a>
+  <a href="index.html#clients" onclick="document.getElementById('mobileMenu').classList.remove('open')">Clients</a>
+  <a href="index.html#contact" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact Us</a>
+</div>
+
+<!-- SECTION 1: HERO -->
+<div class="heritage-hero">
+  <div class="heritage-hero-inner">
+    <div class="section-label">Est. 1981</div>
+    <h1>Four Decades of<br>Keeping India Safe</h1>
+    <p class="heritage-hero-sub">The story of IJS Electronics, the GRAND brand, and the family that built India's emergency vehicle warning industry from the ground up.</p>
+    <div class="stat-pills">
+      <span class="stat-pill">44+ Years</span>
+      <span class="stat-pill">29 Patents</span>
+      <span class="stat-pill">13+ Police Forces</span>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO: papaji 23 -->
+<div class="photo-hero-strip">
+  <img src="images/papaji 23.jpg" alt="" style="object-position: 50% 70%; height: 400px;">
+</div>
+
+<!-- SECTION 2: FOUNDING FAMILY -->
+<section class="founding-section">
+  <div class="founding-grid">
+    <div>
+      <div class="section-label">The Beginning</div>
+      <h2 class="section-title">A Family Built<br>on Purpose</h2>
+      <div class="founding-body">
+        <p>S. Indarjit Singh Chhabra founded IJS Electronics in Delhi in 1981 — a Public Address System manufacturer built on a simple belief: make products that serve people when it matters most.</p>
+        <p>His son, Jaspal Singh Chhabra, joined the company from the ground floor at his father's insistence. Indarjit believed that to run a successful business, one must have hands-on experience of every internal process — and he made sure Jaspal understood the company from the inside out.</p>
+        <p>In 1988, Jaspal introduced the concept of the red-blue emergency light bar system to India for the first time — under the brand name GRAND. Within months of its launch, the system was installed on the President of India's car. The GRAND brand was born.</p>
+        <p>In 1996, Jaspal Singh Chhabra assumed full leadership of IJS Electronics. Under his stewardship over the next three decades, the company grew to hold 29 registered design patents, achieve ISO 9001 certification, and supply India's most critical emergency fleets — from the President's vehicle to police forces across every state.</p>
+      </div>
+    </div>
+    <div>
+      <img src="images/heritage-team.jpg" alt="Jaspal Singh Chhabra with the IJS Electronics production line team" style="width:100%;border-radius:12px;display:block;">
+      <p class="img-caption">Jaspal Singh Chhabra with the IJS Electronics production line team</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: THE FOUNDER -->
+<section style="background:#0B1744; padding: 80px 0;">
+  <div style="max-width:960px; margin:0 auto; padding:0 40px;">
+    <div class="section-label" style="color:rgba(255,255,255,0.5);">The Founder</div>
+    <h2 class="section-title" style="color:#fff;">S. Indarjit Singh Chhabra</h2>
+    <div style="font-size:16px; font-weight:300; color:rgba(255,255,255,0.8); line-height:1.85;">
+      <p style="margin-bottom:1.2rem;">S. Indarjit Singh Chhabra spent 35 years as a partner at Ahuja Radios — one of India's foremost public address system companies, serving the Indian Police Forces and government institutions. In 1981, he founded IJS Electronics, channelling three decades of expertise into building India's most trusted emergency warning products manufacturer.</p>
+      <p style="margin-bottom:1.2rem;">Beyond business, S. Indarjit Singh Chhabra was a pillar of Delhi's civic life. He served as Charter President of Lions Club Delhi Fort, Assistant Governor of Lions Club District 321A, President of the All India Radio Electronic Association, Worshipful Master of Masonic Club Delhi Janpath, President of Gurudwara Sri Guru Singh Sabha GK II, and President of the International Punjabi Federation. He was honoured with the Lifetime Achievement Award by the Electronic Industry.</p>
+      <p>His principles guided the company from its first day: quality without compromise, and service before self.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; margin-top:48px; line-height:0; align-items:start;">
+      <img src="images/papaji 9.jpg" alt="" style="width:100%; height:280px; object-fit:cover; filter:grayscale(100%); display:block;">
+      <div>
+        <img src="images/papaji 24.jpg" alt="" style="width:100%; height:280px; object-fit:cover; filter:grayscale(100%); display:block;">
+        <p style="font-size:11px; color:rgba(255,255,255,0.5); font-style:italic; text-align:center; line-height:1.4; padding:10px 12px 0; margin:0;">Prime Minister Jawaharlal Nehru inaugurates the Ahuja Radios factory, Okhla Industrial Estate — April 1958. Accompanied by Indira Gandhi and Lal Bahadur Shastri.</p>
+      </div>
+      <img src="images/papaji 1.jpg" alt="" style="width:100%; height:280px; object-fit:cover; filter:grayscale(100%); display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip-2col" style="align-items:start;">
+  <img src="images/papaji 18.jpg" alt="">
+  <div style="line-height:0;">
+    <img src="images/papaji 25.jpg" alt="" style="width:100%; height:440px; object-fit:cover; object-position:center top; filter:grayscale(100%); display:block;">
+    <p style="font-size:11px; color:var(--gray); font-style:italic; text-align:center; line-height:1.4; padding:10px 12px 0; margin:0; background:var(--off-white);">Jawaharlal Nehru and Indira Gandhi at Ahuja Radios, Okhla — April 1958.</p>
+  </div>
+</div>
+
+<!-- SECTION 3: THE MANAGING DIRECTOR -->
+<section class="md-section">
+  <div class="md-grid">
+    <div>
+      <div class="section-label">The Man Behind GRAND</div>
+      <h2 class="section-title">Jaspal Singh<br>Chhabra</h2>
+      <div class="founder-title">Managing Director · IJS Electronics</div>
+      <div class="founder-quote">"We build products as if someone's life depends on it."</div>
+      <div class="md-body">
+        <p>Jaspal Singh Chhabra has led IJS Electronics since 1996, building on the foundation his father laid and transforming the company into India's pioneer in emergency vehicle warning products.</p>
+        <p>His passion for product design drove him to join the company from the ground up — mastering every process before taking the helm. In 1988, it was Jaspal who introduced the red-blue emergency light bar system to India for the first time, under the brand name GRAND. Within months of launch, it was installed on the President of India's car.</p>
+        <p>Over the decades that followed, under his leadership IJS Electronics grew to hold 29 registered design patents, achieve ISO 9001 certification, and supply India's most critical emergency fleets — from the President's vehicle to police forces across every state.</p>
+        <p>A firm believer in fair dealing, Jaspal lives by his father's principle: "Word of a gentleman is as good as his bond, sometimes even better."</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;justify-content:center;">
+      <div class="founder-img-wrap">
+        <img src="images/JPS-Passport-Photo.jpg" alt="Jaspal Singh Chhabra — Managing Director, IJS Electronics">
+        <div class="founder-img-caption">Jaspal Singh Chhabra · Managing Director</div>
+      </div>
+    </div>
+  </div>
+  <div class="md-stats-row">
+    <div class="story-stat">
+      <div>
+        <div class="ss-val">44<sup>+</sup></div>
+        <div class="ss-lbl">Years at IJS Electronics</div>
+      </div>
+    </div>
+    <div class="story-stat">
+      <div>
+        <div class="ss-val">29</div>
+        <div class="ss-lbl">Registered Design Patents</div>
+      </div>
+    </div>
+    <div class="story-stat">
+      <div>
+        <div class="ss-val">1<sup>st</sup></div>
+        <div class="ss-lbl">Emergency Light Bar Maker in India</div>
+      </div>
+    </div>
+    <div class="story-stat">
+      <div>
+        <div class="ss-val" style="font-size:16px;line-height:1.3;letter-spacing:0.01em;">Jagran<br>GEMS 2020</div>
+        <div class="ss-lbl">Industry Leadership Award</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip-2col">
+  <img src="images/papaji 21.jpg" alt="">
+  <img src="images/papaji 7.jpg" alt="">
+</div>
+
+<!-- PHOTO STRIP -->
+<img class="photo-strip-full" src="images/papaji 17.jpg" alt="">
+
+<!-- SECTION 4: HERITAGE TIMELINE -->
+<section class="timeline-section">
+  <div class="section-label">Our Journey</div>
+  <h2 class="section-title">Milestones That<br>Shaped an Industry</h2>
+  <div class="heritage-timeline">
+
+    <!-- 1981 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">1981</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">1981</div>
+        <div class="ht-title">IJS Electronics Founded</div>
+        <div class="ht-body">S. Indarjit Singh Chhabra establishes IJS Electronics in Delhi as a Public Address System manufacturer. A family business built on the belief that quality and integrity are inseparable.</div>
+      </div>
+    </div>
+
+    <!-- 1988 — RIGHT — ACCENT -->
+    <div class="ht-item ht-right ht-accent">
+      <div class="ht-dot ht-red">1988</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">1988</div>
+        <div class="ht-title">India's First Emergency Light Bar</div>
+        <div class="ht-body">Jaspal Singh Chhabra introduces the red-blue emergency light bar system to India for the first time under the GRAND brand. Within months, the system is installed on the President of India's car.</div>
+      </div>
+    </div>
+
+    <!-- 1996 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">1996</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">1996</div>
+        <div class="ht-title">A New Chapter</div>
+        <div class="ht-body">Jaspal Singh Chhabra assumes full leadership of IJS Electronics, carrying his father's vision forward into a new era.</div>
+      </div>
+    </div>
+
+    <!-- 2009 — RIGHT -->
+    <div class="ht-item ht-right">
+      <div class="ht-dot">2009</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">c. 2009</div>
+        <div class="ht-title">ISO 9001 Certified</div>
+        <div class="ht-body">IJS Electronics achieves ISO 9001 Quality Management certification — a commitment to international quality standards.</div>
+      </div>
+    </div>
+
+    <!-- Feb 2011 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">2011</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">February 2011</div>
+        <div class="ht-title">National Television Feature</div>
+        <div class="ht-body">GRAND's ER-ONE system is featured on Zee TV — national recognition for an Indian-made emergency vehicle solution.</div>
+      </div>
+    </div>
+
+    <!-- 2012 — RIGHT -->
+    <div class="ht-item ht-right">
+      <div class="ht-dot">2012</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">2012</div>
+        <div class="ht-title">ER-ONE Launched</div>
+        <div class="ht-body">The ER-ONE integrated emergency response system is launched, becoming a flagship product for police and ambulance fleets across India.</div>
+      </div>
+    </div>
+
+    <!-- Sep 2013 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">2013</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">September 2013</div>
+        <div class="ht-title">India International Security Expo</div>
+        <div class="ht-body">GRAND exhibits at the India International Security Expo, Pragati Maidan, New Delhi — four days presenting to India's security establishment.</div>
+      </div>
+    </div>
+
+    <!-- Jan 2014 — RIGHT -->
+    <div class="ht-item ht-right">
+      <div class="ht-dot">2014</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">January 2014</div>
+        <div class="ht-title">INTERSEC Dubai</div>
+        <div class="ht-body">GRAND exhibits at INTERSEC 2014 in Dubai — the world's leading safety and security trade show. Indian emergency warning technology on the world stage.</div>
+      </div>
+    </div>
+
+    <!-- Feb 2014 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">2014</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">February 2014</div>
+        <div class="ht-title">ICAT Certified</div>
+        <div class="ht-body">Products certified by ICAT — India's government-mandated premier automotive testing authority.</div>
+      </div>
+    </div>
+
+    <!-- Apr 2017 — RIGHT -->
+    <div class="ht-item ht-right">
+      <div class="ht-dot">2017</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">April 2017</div>
+        <div class="ht-title">Rising to the Challenge</div>
+        <div class="ht-body">When the Government banned red beacon lights from VIP vehicles, Jaspal and his team designed 16 new product variants in a fortnight. The complete LED flashing light series launched on May 10, 2017 — a setback turned into a breakthrough.</div>
+      </div>
+    </div>
+
+    <!-- Jan 2020 — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">2020</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">January 2020</div>
+        <div class="ht-title">Industry Leadership Award</div>
+        <div class="ht-body">Jaspal Singh Chhabra receives the Jagran GEMS 2020 Industry Leadership Award, presented by Dr. Mahendra Nath Pandey, Union Minister for Skill Development &amp; Entrepreneurship, Government of India.</div>
+      </div>
+    </div>
+
+    <!-- Jan 2025 — RIGHT -->
+    <div class="ht-item ht-right">
+      <div class="ht-dot">2025</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">January 2025</div>
+        <div class="ht-title">Auto Expo — The Components Show</div>
+        <div class="ht-body">GRAND exhibits at Auto Expo The Components Show 2025, Bharat Mandapam, New Delhi. Four decades on — still leading.</div>
+      </div>
+    </div>
+
+    <!-- 2025 Medicall — LEFT -->
+    <div class="ht-item ht-left">
+      <div class="ht-dot">2025</div>
+      <div class="ht-content">
+        <div class="ht-year-tag">2025</div>
+        <div class="ht-title">Medicall Exhibition</div>
+        <div class="ht-body">GRAND at Medicall 2025 — affirming the company's commitment to India's ambulance and medical vehicle sector.</div>
+      </div>
+    </div>
+
+  </div>
+  <p style="margin-top:1.5rem;font-size:13px;color:var(--gray);font-style:italic;">
+    See all exhibitions → <a href="exhibitions.html" style="color:var(--navy);font-weight:600;text-decoration:none;">Exhibitions &amp; Events</a>
+  </p>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip-2col">
+  <img src="images/papaji 27.jpg" alt="">
+  <img src="images/papaji 16.jpg" alt="">
+</div>
+
+<!-- SECTION 5: CERTIFICATIONS -->
+<section class="certs-section">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title">Built to the<br>Highest Standards</h2>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <div class="cert-name">ISO 9001:2015</div>
+      <div class="cert-desc">Quality Management System — certified since 2009. Every product built to international standards.</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-name">ICAT Tested</div>
+      <div class="cert-desc">Certified by the International Centre for Automotive Technology — India's government-mandated automotive testing authority.</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-name">CE Certified</div>
+      <div class="cert-desc">European safety certification (January 2024) — meeting international export standards.</div>
+    </div>
+  </div>
+  <p class="certs-meta">Also registered: Udyam/MSME · GST · GeM (Government e-Marketplace)</p>
+  <div class="gem-pill">GeM Registered Vendor</div>
+</section>
+
+<!-- PHOTO STRIP -->
+<img class="photo-strip-full" src="images/papaji 15.jpg" alt="">
+
+<!-- SECTION 6: AWARDS -->
+<section class="awards-section">
+  <div class="section-label">Recognition</div>
+  <h2 class="section-title">Acknowledged<br>by the Nation</h2>
+  <div class="award-card">
+    <div>
+      <div class="award-name">Jagran GEMS 2020 —<br>Industry Leadership Award</div>
+      <div class="award-presented">Presented by Dr. Mahendra Nath Pandey, Union Minister for Skill Development &amp; Entrepreneurship, Government of India</div>
+      <div class="award-published">Published: Dainik Jagran, 28 January 2020</div>
+      <div class="award-supporting">Recognised for four decades of innovation and service to India's emergency vehicle warning industry.</div>
+    </div>
+    <div style="border-radius:8px;overflow:hidden;flex-shrink:0;width:100%;max-width:340px;">
+      <img src="images/jagran-gems-award.jpg" alt="Jaspal Singh Chhabra receiving the Jagran GEMS 2020 Industry Leadership Award from Union Minister Dr. Mahendra Nath Pandey" style="width:100%;height:auto;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip-2col">
+  <img src="images/papaji 24.jpg" alt="">
+  <img src="images/papaji 19.jpg" alt="">
+</div>
+
+<!-- SECTION 7: PHILOSOPHY -->
+<section class="philosophy-section">
+  <div class="philosophy-inner">
+    <div>
+      <div class="section-label">His Philosophy</div>
+      <h2 class="section-title" style="color:white;">Built with<br>Purpose</h2>
+      <blockquote class="philosophy-quote">
+        "We build products as if someone's life depends on it — because it does."
+        <cite>— Jaspal Singh Chhabra, Managing Director</cite>
+      </blockquote>
+    </div>
+    <div class="philosophy-right">
+      <p>"Every light bar, every siren, every speaker that leaves our factory goes into a vehicle that may one day be the difference between life and death."</p>
+      <p style="margin-top:1.2rem;">That weight of responsibility has never left us. It is why we patent our designs, why we certify to ISO 9001:2015, why we have never compromised on quality in over four decades — and why we never will.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: PULL QUOTE BAND -->
+<div style="background:var(--navy);padding:60px 5vw;display:flex;align-items:center;justify-content:center;">
+  <div style="border-left:4px solid var(--red);padding-left:28px;max-width:860px;">
+    <p style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:600;font-style:italic;color:white;line-height:1.5;text-align:left;">"In 1988, Jaspal Singh Chhabra introduced the red-blue emergency light bar to India — a concept that did not exist here before that moment. Within months it was on the President of India's car. The 29 patents that followed are a record of four decades of firsts."</p>
+  </div>
+</div>
+
+<!-- SECTION 9: BY THE NUMBERS -->
+<section class="numbers-section">
+  <div class="section-label">Impact</div>
+  <h2 class="section-title">44 Years in Numbers</h2>
+  <div class="numbers-grid">
+    <div class="num-card">
+      <div class="num-val">1981</div>
+      <div class="num-lbl">Year Established</div>
+    </div>
+    <div class="num-card">
+      <div class="num-val">29</div>
+      <div class="num-lbl">Registered Design Patents</div>
+    </div>
+    <div class="num-card">
+      <div class="num-val">13<sup>+</sup></div>
+      <div class="num-lbl">Police &amp; Paramilitary Forces Served</div>
+    </div>
+    <div class="num-card">
+      <div class="num-val">6<sup>+</sup></div>
+      <div class="num-lbl">Major Exhibitions — India &amp; International</div>
+    </div>
+    <div class="num-card">
+      <div class="num-val">1<sup>st</sup></div>
+      <div class="num-lbl">Emergency Light Bar Maker in India</div>
+    </div>
+    <div class="num-card">
+      <div class="num-val">70<sup>%+</sup></div>
+      <div class="num-lbl">Of India's Police &amp; Emergency Vehicles *</div>
+    </div>
+  </div>
+  <p class="num-footnote">* As reported in Dainik Jagran, January 2020</p>
+</section>
+
+<!-- SECTION 10: CTA -->
+<section class="cta-section">
+  <div class="section-label">Explore More</div>
+  <h2 class="section-title">Continue the Story</h2>
+  <div class="cta-grid">
+    <div class="cta-card">
+      <div class="cta-card-title">Our Exhibitions</div>
+      <div class="cta-card-body">GRAND has exhibited at trade shows across India and internationally — from Pragati Maidan to Dubai. See where we've been.</div>
+      <a href="exhibitions.html" class="cta-btn">View Exhibitions</a>
+    </div>
+    <div class="cta-card">
+      <div class="cta-card-title">Download Our Catalogue</div>
+      <div class="cta-card-body">The full GRAND product range — LED light bars, PA systems, sirens, ambulance equipment, and more.</div>
+      <a href="catalogue.pdf" download class="cta-btn red">Download Catalogue</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: A LIFE IN FRAMES -->
+<section class="gallery-section">
+  <div class="section-label">A Life in Frames</div>
+  <h2 class="gallery-title">A Life in Frames</h2>
+  <div class="masonry-grid">
+    <div class="masonry-item" onclick="openLb('images/papaji 25.jpg')"><img src="images/papaji 25.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 24.jpg')"><img src="images/papaji 24.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 9.jpg')"><img src="images/papaji 9.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 1.jpg')"><img src="images/papaji 1.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 18.jpg')"><img src="images/papaji 18.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 13.jpg')"><img src="images/papaji 13.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 10.jpg')"><img src="images/papaji 10.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 8.jpg')"><img src="images/papaji 8.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 4.jpg')"><img src="images/papaji 4.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 12.jpg')"><img src="images/papaji 12.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 6.jpg')"><img src="images/papaji 6.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 3.jpg')"><img src="images/papaji 3.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 7.jpg')"><img src="images/papaji 7.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 19.jpg')"><img src="images/papaji 19.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 20.jpg')"><img src="images/papaji 20.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 16.jpg')"><img src="images/papaji 16.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 14.jpg')"><img src="images/papaji 14.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 15.jpg')"><img src="images/papaji 15.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 2.jpg')"><img src="images/papaji 2.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 5.jpg')"><img src="images/papaji 5.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 11.jpg')"><img src="images/papaji 11.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 22.jpg')"><img src="images/papaji 22.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 26.jpg')"><img src="images/papaji 26.jpg" alt=""></div>
+    <div class="masonry-item" onclick="openLb('images/papaji 27.jpg')"><img src="images/papaji 27.jpg" alt=""></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lb" onclick="closeLb()">
+  <button class="lb-close" onclick="closeLb()">&#215;</button>
+  <img id="lbImg" src="" alt="">
+</div>
+<script>
+function openLb(src) {
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lb').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+  document.getElementById('lb').classList.remove('open');
+  document.getElementById('lbImg').src = '';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLb(); });
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="images/grand-logo-clean.png" alt="GRAND Logo"></div>
+      <div class="footer-tagline-accent">Innovation · Excellence · Reliability · Trust</div>
+      <div class="footer-tagline">IJS Electronics · Manufacturers since 1981<br>Noida &amp; New Delhi, India</div>
+      <div class="footer-mission">"To make life safer for those who save lives."</div>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html#ef2">Ef-2 Series</a></li>
+        <li><a href="products.html#efone">Ef-One Series</a></li>
+        <li><a href="products.html#sirens">PA / Siren Systems</a></li>
+        <li><a href="products.html#revolving">Revolving Lights</a></li>
+        <li><a href="products.html#ambulance">Ambulance LED AIS 125</a></li>
+        <li><a href="products.html#applications">Applications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About IJS Electronics</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="index.html#clients">Our Clients</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Credentials</h4>
+      <ul>
+        <li>ISO 9001:2015</li>
+        <li>29 Design Patents</li>
+        <li>AIS 125 Compliant</li>
+        <li>OEM Approved</li>
+        <li>1–3 Year Warranty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 IJS Electronics. All rights reserved. | D-39 Sector 6, Noida</div>
+    <div class="footer-cert">
+      <span class="cert-badge">ISO 9001:2015</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Sticky Button -->
+<a class="whatsapp-float" href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.77L0 32l8.476-2.004A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.791-1.864l-.487-.29-5.03 1.189 1.212-4.898-.318-.502A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.161-2.72-1.294-.366-.133-.632-.199-.898.2-.266.398-1.031 1.294-1.264 1.56-.233.266-.465.299-.863.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.213-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.2-.233.266-.399.399-.665.133-.266.066-.499-.034-.698-.1-.2-.898-2.163-1.231-2.963-.324-.778-.653-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.064.499-.366.398-1.396 1.362-1.396 3.323s1.43 3.855 1.629 4.121c.2.266 2.815 4.298 6.822 6.028.954.411 1.698.657 2.279.841.957.305 1.829.262 2.517.159.768-.114 2.354-.962 2.687-1.892.333-.93.333-1.727.233-1.892-.1-.166-.366-.266-.764-.465z"/>
+  </svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>

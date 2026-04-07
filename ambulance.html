@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambulance Warning Systems | AIS 125 Compliant | GRAND by IJS Electronics</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="description" content="Complete AIS 125 certified lighting and siren systems for ambulances — trusted by Force Motors, Tata Motors and Maruti Suzuki. LED light bars, work lights, PA amplifiers from GRAND by IJS Electronics.">
+<meta property="og:title" content="Ambulance Warning Systems | AIS 125 Compliant | GRAND">
+<meta property="og:description" content="Complete AIS 125 ambulance lighting and siren systems trusted by major OEMs in India.">
+<meta property="og:image" content="https://grandwarninglights.in/images/ambulance-hero.jpg">
+<meta property="og:url" content="https://grandwarninglights.in/ambulance.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GRAND by IJS Electronics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ambulance Warning Systems | AIS 125 Compliant | GRAND">
+<meta name="twitter:description" content="AIS 125 certified lighting and siren systems for ambulances.">
+<meta name="twitter:image" content="https://grandwarninglights.in/images/ambulance-hero.jpg">
+<link rel="canonical" href="https://grandwarninglights.in/ambulance.html">
+<meta name="theme-color" content="#1E2282">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1E2282;
+  --navy-dark: #141660;
+  --navy-light: #2B2FA8;
+  --red: #CC1F26;
+  --red-dark: #A01820;
+  --white: #FFFFFF;
+  --off-white: #F4F6FA;
+  --gray: #6B7280;
+  --gray-light: #E8ECF2;
+  --dark: #0D0E1A;
+  --text: #1A1B2E;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-logo img { height: 54px; width: auto; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-links a.active { color: var(--navy); }
+.nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: 4px !important; font-size: 12px !important; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--red-dark) !important; }
+
+/* HAMBURGER */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: var(--header-offset, 104px); left: 0; right: 0; background: var(--white); border-bottom: 2px solid var(--red); z-index: 99; padding: 16px 5vw; flex-direction: column; gap: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--gray-light); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--red); }
+
+/* SECTION BASE */
+section { padding: 90px 5vw; }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+.section-label::before { content: ''; width: 20px; height: 2px; background: var(--red); display: inline-block; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; text-transform: uppercase; line-height: 1; color: var(--navy); margin-bottom: 1.25rem; }
+.section-body { font-size: 16px; font-weight: 300; color: var(--gray); line-height: 1.8; max-width: 660px; }
+
+/* HERO */
+.amb-hero {
+  background: linear-gradient(rgba(14,17,65,0.82), rgba(14,17,65,0.92)), url('images/ambulance-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 104px;
+  padding: 40px 5vw 32px;
+  position: relative; overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  min-height: 0;
+}
+.amb-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(204,31,38,0.12) 0%, transparent 60%);
+}
+.amb-hero-inner { position: relative; z-index: 1; animation: fadeUp 0.7s 0.2s both; }
+.amb-hero .section-label { color: rgba(255,255,255,0.5); }
+.amb-hero .section-label::before { background: var(--red); }
+.amb-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(32px, 4vw, 56px); font-weight: 800;
+  text-transform: uppercase; line-height: 0.95;
+  color: white; margin-bottom: 0.8rem;
+}
+.amb-hero-sub {
+  font-size: 15px; font-weight: 300;
+  color: rgba(255,255,255,0.62); line-height: 1.65;
+  max-width: 520px;
+}
+.amb-hero-img-wrap {
+  position: relative; z-index: 1;
+  animation: fadeUp 0.7s 0.35s both;
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+  max-height: 520px;
+  display: flex; align-items: center; justify-content: center;
+}
+.amb-hero-img-wrap img { width: auto; height: 100%; max-height: 520px; max-width: 100%; display: block; object-fit: contain; }
+
+/* FILTER BAR */
+.filter-bar-wrap {
+  position: sticky; top: var(--header-offset, 104px); z-index: 90;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.filter-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 5vw;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.filter-bar::-webkit-scrollbar { display: none; }
+.filter-btn {
+  flex-shrink: 0;
+  background: none; border: 1px solid var(--gray-light);
+  color: var(--gray); font-family: 'Barlow', sans-serif;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+  padding: 7px 16px; border-radius: 4px; cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.filter-btn:hover { border-color: var(--navy); color: var(--navy); }
+.filter-btn.active { background: var(--navy); color: white; border-color: var(--navy); }
+
+/* PRODUCT GRID SECTION */
+.grid-section { padding: 40px 5vw 80px; background: var(--off-white); }
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 0;
+}
+
+/* PRODUCT CARD */
+.prod-card {
+  background: white; border-radius: 8px; border: 1px solid #e5e7eb;
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  scroll-margin-top: 150px; cursor: pointer;
+}
+.prod-card:hover { box-shadow: 0 8px 28px rgba(30,34,130,0.1); transform: translateY(-2px); }
+.prod-card-img {
+  height: 200px; display: flex; align-items: center; justify-content: center;
+  background: #f8f9ff; overflow: hidden;
+}
+.prod-card-img img { max-width: 100%; max-height: 100%; object-fit: contain; padding: 16px; }
+.prod-card-placeholder {
+  height: 200px; background: #1E2282;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; text-align: center; color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px; font-weight: 700; text-transform: uppercase; line-height: 1.2;
+}
+.prod-card-body { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.prod-name {
+  font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
+  color: #1E2282; line-height: 1.2;
+}
+.prod-tag { font-size: 11px; color: #6b7280; font-weight: 500; letter-spacing: 0.05em; }
+.prod-enquire {
+  margin-top: auto; padding-top: 10px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #1E2282; color: white; padding: 9px 16px; border-radius: 4px;
+  text-decoration: none; font-size: 11px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.2s;
+}
+.prod-enquire:hover { background: #CC1F26; }
+
+/* CATEGORY DESCRIPTIONS */
+.cat-desc-wrap { grid-column: 1 / -1; scroll-margin-top: 150px; }
+.cat-desc { font-size: 15px; font-weight: 300; color: #6b7280; line-height: 1.8; max-width: 720px; margin-bottom: 2rem; padding-top: 1rem; }
+.cat-desc strong { font-weight: 600; color: #1E2282; }
+
+/* VEHICLES SECTION */
+.vehicles-section {
+  background: var(--navy);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.vehicles-img { width: 100%; display: block; max-height: 520px; object-fit: cover; object-position: center; }
+.vehicles-caption {
+  background: var(--navy);
+  padding: 24px 5vw;
+  font-size: 14px; font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CTA SECTION */
+.cta-section { background: var(--off-white); padding: 80px 5vw; }
+.cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 2rem; }
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 15px 32px; border-radius: 4px; text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+.cta-btn-primary { background: var(--red); color: white; }
+.cta-btn-primary:hover { background: var(--red-dark); }
+.cta-btn-secondary { background: var(--navy); color: white; }
+.cta-btn-secondary:hover { background: var(--navy-dark); }
+
+/* FOOTER */
+footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid var(--red); }
+.footer-top { display: grid; grid-template-columns: 2.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 24px; }
+.footer-logo { margin-bottom: 16px; }
+.footer-logo img { height: 44px; filter: brightness(0) invert(1); display: block; }
+.footer-tagline-accent { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--red); margin-bottom: 6px; }
+.footer-tagline { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 240px; }
+.footer-mission { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.07); font-size: 11.5px; font-style: italic; color: rgba(255,255,255,0.22); line-height: 1.5; }
+.footer-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-col li { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+.footer-cert { display: flex; gap: 8px; align-items: center; font-size: 11px; color: rgba(255,255,255,0.3); flex-wrap: wrap; }
+.cert-badge { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 9px; font-weight: 700; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 2px; }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+  width: 58px; height: 58px; border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s; text-decoration: none;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 22px rgba(0,0,0,0.32); }
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 1200px) {
+  .prod-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 1000px) {
+  .amb-hero { grid-template-columns: 1fr; gap: 40px; min-height: 0; }
+  .amb-hero-img-wrap { max-width: 520px; }
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+@media (max-width: 600px) {
+  .info-bar-phones { display: none !important; }
+  .info-bar-mobile { display: flex !important; }
+  nav { height: 56px; top: 36px; }
+  .nav-logo img { height: 40px; }
+  .amb-hero { margin-top: 92px; padding: 40px 5vw 32px; }
+  section, .cta-section { padding: 56px 5vw; }
+  .grid-section { padding: 28px 5vw 60px; }
+  .prod-grid { grid-template-columns: 1fr; gap: 14px; }
+  .cta-buttons { flex-direction: column; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- INFO BAR -->
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;background:#1E2282;padding:6px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;">
+  <div class="info-bar-phones" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+    <a href="tel:+911140527350" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 11-40527350/51/52/53/54</a>
+    <a href="tel:+911204117740" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 120-4117740</a>
+    <a href="tel:+919810811668" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 9810811668</a>
+    <span style="color:rgba(255,255,255,0.85);font-size:12px;font-weight:500;">✉ grandinfo2004&#64;gmail.com</span>
+  </div>
+  <a class="info-bar-mobile" href="tel:+919810811668" style="display:none;color:rgba(255,255,255,0.9);text-decoration:none;font-size:13px;font-weight:600;">📞 +91 9810811668</a>
+  <a href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" style="background:#25D366;color:white;padding:4px 14px;border-radius:20px;text-decoration:none;font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px;">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="GRAND by IJS Electronics" style="height:54px; width:auto;"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="ambulance.html" class="active">Ambulance AIS 125</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" type="button" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+  <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+  <a href="exhibitions.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Exhibitions</a>
+  <a href="products.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Products</a>
+  <a href="ambulance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Ambulance AIS 125</a>
+  <a href="index.html#clients" onclick="document.getElementById('mobileMenu').classList.remove('open')">Clients</a>
+  <a href="index.html#contact" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<div class="amb-hero">
+  <div class="amb-hero-inner">
+    <div class="section-label">AIS 125 Compliant</div>
+    <h1>Ambulance Warning<br>Systems</h1>
+    <p class="amb-hero-sub">Complete AIS 125 certified lighting and siren systems — trusted by Force Motors, Tata Motors and Maruti Suzuki.</p>
+  </div>
+  <div class="amb-hero-img-wrap">
+    <img src="images/ambulance-hero.jpg" alt="GRAND AIS 125 Ambulance Warning Systems">
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar-wrap">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="lightbars">LED Light Bars</button>
+    <button class="filter-btn" data-filter="worklights">Work Lights</button>
+    <button class="filter-btn" data-filter="pa">PA Amplifiers</button>
+  </div>
+</div>
+
+<!-- PRODUCT GRID -->
+<div class="grid-section">
+  <div class="prod-grid" id="prodGrid">
+
+    <!-- LED LIGHT BARS -->
+    <div class="cat-desc-wrap" id="lightbars" data-category="lightbars">
+      <p class="cat-desc"><strong>AIS 125 Certified LED Light Bars</strong> for ambulance vehicles. All models comply with AIS 125 standards and are approved by major OEMs including Force Motors, Tata Motors and Maruti Suzuki.</p>
+    </div>
+
+    <div class="prod-card" data-category="lightbars" data-image="images/products/ef-2-42s-rwb.png" data-image-alt="Ef-2 42S 4L LED Light Bar">
+      <div class="prod-card-placeholder">Ef-2 42S 4L</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Ef-2 42S 4L</div>
+        <div class="prod-tag">LED Light Bar · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="lightbars" data-image="images/products/ef-2-32s-rwb.png" data-image-alt="Ef-2 32S 4L LED Light Bar">
+      <div class="prod-card-placeholder">Ef-2 32S 4L</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Ef-2 32S 4L</div>
+        <div class="prod-tag">LED Light Bar · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="lightbars" data-image="images/products/ef-2-24s-rbw.png" data-image-alt="Ef-2 24S 4L LED Light Bar">
+      <div class="prod-card-placeholder">Ef-2 24S 4L</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Ef-2 24S 4L</div>
+        <div class="prod-tag">LED Light Bar · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="lightbars" data-image="images/products/Marsvoice Series-II 4L.png" data-image-alt="Marsvoice Series-II 4L LED Light Bar">
+      <div class="prod-card-placeholder">Marsvoice Series-II 4L</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Marsvoice Series-II 4L</div>
+        <div class="prod-tag">LED Light Bar · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <!-- WORK LIGHTS -->
+    <div class="cat-desc-wrap" id="worklights" data-category="worklights">
+      <p class="cat-desc"><strong>Ambulance Work Lights</strong> — compact, high-brightness LED modules for interior and exterior ambulance use. Available in Red, Blue, Amber and White. AIS 125 compliant.</p>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/4L.png" data-image-alt="4L Work Light">
+      <div class="prod-card-placeholder">4L Work Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">4L Work Light</div>
+        <div class="prod-tag">Work Light · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/6L.png" data-image-alt="6L Work Light">
+      <div class="prod-card-placeholder">6L Work Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">6L Work Light</div>
+        <div class="prod-tag">Work Light · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/9L Dual.png" data-image-alt="9L Dual Work Light">
+      <div class="prod-card-placeholder">9L Dual Work Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">9L Dual Work Light</div>
+        <div class="prod-tag">Work Light · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/4L W.png" data-image-alt="4L W Work Light">
+      <div class="prod-card-placeholder">4L W Work Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">4L W Work Light</div>
+        <div class="prod-tag">Work Light · White · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/Dash Board Light.png" data-image-alt="Dash Board Light">
+      <div class="prod-card-placeholder">Dash Board Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Dash Board Light</div>
+        <div class="prod-tag">Work Light · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="worklights" data-image="images/products/4L-3L-Slim-Light.png" data-image-alt="4L 3L Slim Light">
+      <div class="prod-card-placeholder">4L 3L Slim Light</div>
+      <div class="prod-card-body">
+        <div class="prod-name">4L 3L Slim Light</div>
+        <div class="prod-tag">Work Light · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <!-- PA AMPLIFIERS -->
+    <div class="cat-desc-wrap" id="pa" data-category="pa">
+      <p class="cat-desc"><strong>AIS 125 Certified PA Amplifiers</strong> for ambulance siren and public address systems. All models meet AIS 125 standards with dedicated Horn and Siren controls.</p>
+    </div>
+
+    <div class="prod-card" data-category="pa" data-image="images/products/GPA 300.png" data-image-alt="GPA 300 amplifier">
+      <div class="prod-card-placeholder">GPA 300</div>
+      <div class="prod-card-body">
+        <div class="prod-name">GPA 300</div>
+        <div class="prod-tag">PA Amplifier · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="pa" data-image="images/products/gpa-50bl.jpg" data-image-alt="GPA 50 BL DLX Amplifier">
+      <div class="prod-card-placeholder">GPA 50 BL DLX</div>
+      <div class="prod-card-body">
+        <div class="prod-name">GPA 50 BL DLX</div>
+        <div class="prod-tag">PA Amplifier · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="pa" data-image="images/products/GPA 100 USB.png" data-image-alt="GPA 100 USB amplifier">
+      <div class="prod-card-placeholder">GPA 100 USB</div>
+      <div class="prod-card-body">
+        <div class="prod-name">GPA 100 USB</div>
+        <div class="prod-tag">PA Amplifier · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+    <div class="prod-card" data-category="pa" data-image="images/products/pursuitlite.png" data-image-alt="Pursuit Lite Amplifier">
+      <div class="prod-card-placeholder">Pursuit Lite</div>
+      <div class="prod-card-body">
+        <div class="prod-name">Pursuit Lite</div>
+        <div class="prod-tag">PA Amplifier · AIS 125</div>
+        <a href="index.html#contact" class="prod-enquire">Enquire</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- VEHICLES -->
+<div class="vehicles-section">
+  <img class="vehicles-img" src="images/ambulance-vehicles.jpg" alt="GRAND AIS 125 systems installed on Force Traveller, Tata Winger and Maruti ambulance fleets">
+  <div class="vehicles-caption">GRAND AIS 125 systems on Force Traveller, Tata Winger and Maruti ambulance fleets.</div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-label">Get Started</div>
+  <h2 class="section-title">Ready to Equip<br>Your Fleet?</h2>
+  <div class="cta-buttons">
+    <a href="ambulance-catalogue.pdf" class="cta-btn cta-btn-primary" download>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Catalogue
+    </a>
+    <a href="index.html#contact" class="cta-btn cta-btn-secondary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Enquire
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="images/grand-logo-clean.png" alt="GRAND Logo"></div>
+      <div class="footer-tagline-accent">Innovation · Excellence · Reliability · Trust</div>
+      <div class="footer-tagline">IJS Electronics · Manufacturers since 1981<br>Noida &amp; New Delhi, India</div>
+      <div class="footer-mission">"To make life safer for those who save lives."</div>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html#ef2">Ef-2 Series</a></li>
+        <li><a href="products.html#efone">Ef-One Series</a></li>
+        <li><a href="products.html#sirens">PA / Siren Systems</a></li>
+        <li><a href="products.html#revolving">Revolving Lights</a></li>
+        <li><a href="ambulance.html">Ambulance LED AIS 125</a></li>
+        <li><a href="products.html#applications">Applications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About IJS Electronics</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="index.html#clients">Our Clients</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Credentials</h4>
+      <ul>
+        <li>ISO 9001:2015</li>
+        <li>29 Design Patents</li>
+        <li>AIS 125 Compliant</li>
+        <li>OEM Approved</li>
+        <li>1–3 Year Warranty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 IJS Electronics. All rights reserved. | D-39 Sector 6, Noida</div>
+    <div class="footer-cert">
+      <span class="cert-badge">ISO 9001:2015</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Sticky Button -->
+<a class="whatsapp-float" href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.77L0 32l8.476-2.004A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.791-1.864l-.487-.29-5.03 1.189 1.212-4.898-.318-.502A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.161-2.72-1.294-.366-.133-.632-.199-.898.2-.266.398-1.031 1.294-1.264 1.56-.233.266-.465.299-.863.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.213-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.2-.233.266-.399.399-.665.133-.266.066-.499-.034-.698-.1-.2-.898-2.163-1.231-2.963-.324-.778-.653-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.064.499-.366.398-1.396 1.362-1.396 3.323s1.43 3.855 1.629 4.121c.2.266 2.815 4.298 6.822 6.028.954.411 1.698.657 2.279.841.957.305 1.829.262 2.517.159.768-.114 2.354-.962 2.687-1.892.333-.93.333-1.727.233-1.892-.1-.166-.366-.266-.764-.465z"/>
+  </svg>
+</a>
+
+<div id="prodModal" role="dialog" aria-modal="true" aria-labelledby="modalName" tabindex="-1" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(10,12,40,0.7);align-items:center;justify-content:center;padding:20px;">
+  <div style="background:white;border-radius:12px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
+    <button id="prodModalClose" onclick="closeProdModal()" aria-label="Close product details" style="position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;font-size:22px;color:#6b7280;line-height:1;">×</button>
+    <div id="modalImg" style="height:240px;background:#f8f9ff;display:flex;align-items:center;justify-content:center;border-radius:12px 12px 0 0;overflow:hidden;"></div>
+    <div style="padding:24px 28px 28px;">
+      <div id="modalTag" style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#CC1F26;margin-bottom:8px;"></div>
+      <div id="modalName" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;text-transform:uppercase;color:#1E2282;margin-bottom:16px;line-height:1.1;"></div>
+      <div id="modalDesc" style="font-size:14px;font-weight:300;color:#6b7280;line-height:1.8;margin-bottom:24px;"></div>
+      <a href="index.html#contact" style="display:inline-flex;align-items:center;background:#1E2282;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">Enquire About This Product →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+var prodData = {
+  'Ef-2 42S 4L': { desc: 'AIS 125 Certified LED Light Bar. Dimensions: 1080 × 275 × 116 mm · Voltage: 12V DC · Current: 3A · 31 LED modules with reflectors and special lens for maximum light intensity. Red White Blue (RWB).' },
+  'Ef-2 32S 4L': { desc: 'AIS 125 Certified LED Light Bar. Dimensions: 790 × 275 × 116 mm · Voltage: 12V DC · Current: 3A · 31 LED modules with reflectors and special lens for maximum light intensity. Red White Blue (RWB).' },
+  'Ef-2 24S 4L': { desc: 'AIS 125 Certified LED Light Bar. Dimensions: 585 × 275 × 116 mm · Voltage: 12V DC · Current: 3A · 31 LED modules with reflectors and special lens for maximum light intensity. Red Blue White (RBW).' },
+  'Marsvoice Series-II 4L': { desc: 'AIS 125 Certified LED Light Bar. Dimensions: 1110 × 270 × 115 mm · Voltage: 12V DC · Current: 2.2A · Red White Blue with integrated siren speaker. OEM approved.' },
+  '4L Work Light': { desc: 'Compact 4-LED ambulance work light. Colour: Red · Blue · Amber · Dimensions: 95 × 77 × 33 mm · AIS 125 Compliant.' },
+  '6L Work Light': { desc: 'Compact 6-LED ambulance work light. Colour: Red · Blue · Amber · Dimensions: 95 × 77 × 33 mm · AIS 125 Compliant.' },
+  '9L Dual Work Light': { desc: 'Dual 9-LED ambulance work light. Colour: Red · Blue · Dimensions: 95 × 77 × 33 mm · AIS 125 Compliant.' },
+  '4L W Work Light': { desc: 'Compact 4-LED white work light for ambulance interiors. Colour: White · Dimensions: 95 × 77 × 33 mm · AIS 125 Compliant.' },
+  'Dash Board Light': { desc: 'AIS 125 Compliant dashboard warning light. Light Source: 2 LED Modules of 4 Bright LEDs in each rectangle box · Colour: Red & Blue · Back Cover: ABS Black · Dimensions: 157 × 196 × 82 mm.' },
+  '4L 3L Slim Light': { desc: 'Slim profile ambulance warning light. Light Source: Bright 4 and 3 LEDs — 3 Watt dual each in rectangle body with Lens · Colour: Red & Blue · AIS 125 Compliant.' },
+  'GPA 300': { desc: 'AIS 125 Compliant PA Amplifier. Power: 40, 60, 80W MAX · Voltage: 12V to 13.25V · SPL: 111dB to 119dB (as per AIS 125 Standards). Horn/Siren Paddle Switch — Manual Siren activated by Down Position, Electronic Air Horn by Up Position.' },
+  'GPA 50 BL DLX': { desc: 'PA Amplifier. Power Output: 35W @8Ω, 50W Max at 4Ω · Input: One Mic, One Aux · Frequency Response: 100Hz–10000Hz±3dB · S/N Ratio: 60dB · Speaker Output: 8Ω · Current Drain: 4 Amp · Dimensions: L-180×H-53×W-153mm.' },
+  'GPA 100 USB': { desc: 'PA Amplifier with USB & SD Card. Light Bar Control: On/Off and Mode Change. Night Mode: RWB Side Flashing. Power: 30W · Voltage: 12V to 13.25V · Current Drain: 2.5 Amp · Impedance: 8Ω · USB & SD Card for Recording & Playback.' },
+  'Pursuit Lite': { desc: 'Compact PA Amplifier. Power Output: 30W Max · Siren: Wail, Yelp · Microphone: One Mic Input · Switches: One for Lights, One for Sirens · Volume Control: One for Siren/Mic · Dimensions: H-48mm × W-157mm × D-125mm.' }
+};
+
+var lastModalTrigger = null;
+
+function openProdModal(name, tag, imgPath, imgAlt, imgPath2, imgAlt2) {
+  var modal = document.getElementById('prodModal');
+  var data = prodData[name] || {};
+  document.getElementById('modalName').textContent = name;
+  document.getElementById('modalTag').textContent = tag;
+  document.getElementById('modalDesc').textContent = data.desc || 'Contact us for full specifications and pricing.';
+  var imgEl = document.getElementById('modalImg');
+  if (imgPath && imgPath2) {
+    imgEl.innerHTML = '<div style="display:flex;gap:8px;width:100%;height:100%;align-items:center;justify-content:center;padding:16px;">' +
+      '<img src="' + imgPath + '" alt="' + (imgAlt || name) + '" style="flex:1;min-width:0;max-height:208px;object-fit:contain;">' +
+      '<img src="' + imgPath2 + '" alt="' + (imgAlt2 || name) + '" style="flex:1;min-width:0;max-height:208px;object-fit:contain;">' +
+      '</div>';
+    imgEl.style.background = '#f8f9ff';
+  } else if (imgPath) {
+    imgEl.innerHTML = '<img src="' + imgPath + '" alt="' + (imgAlt || name) + '" style="max-width:100%;max-height:240px;object-fit:contain;padding:20px;">';
+    imgEl.style.background = '#f8f9ff';
+  } else {
+    imgEl.innerHTML = '<div style="font-family:\'Barlow Condensed\',sans-serif;font-size:20px;font-weight:700;color:white;text-transform:uppercase;">' + name + '</div>';
+    imgEl.style.background = '#1E2282';
+  }
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  lastModalTrigger = document.activeElement;
+  document.getElementById('prodModalClose').focus();
+}
+
+function closeProdModal() {
+  document.getElementById('prodModal').style.display = 'none';
+  document.body.style.overflow = '';
+  if (lastModalTrigger && typeof lastModalTrigger.focus === 'function') {
+    lastModalTrigger.focus();
+  }
+}
+
+document.getElementById('prodModal').addEventListener('click', function (e) {
+  if (e.target === this) closeProdModal();
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Escape') return;
+  if (document.getElementById('prodModal').style.display === 'flex') {
+    closeProdModal();
+  }
+});
+
+(function () {
+  var btns = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.prod-card');
+  var descs = document.querySelectorAll('.cat-desc-wrap');
+  var filterMap = {};
+  var grid = document.getElementById('prodGrid');
+
+  btns.forEach(function (btn) {
+    filterMap[btn.getAttribute('data-filter')] = btn;
+  });
+
+  function applyFilter(filter) {
+    btns.forEach(function (b) { b.classList.remove('active'); });
+    var activeFilter = filterMap[filter] ? filter : 'all';
+    filterMap[activeFilter].classList.add('active');
+    cards.forEach(function (card) {
+      if (activeFilter === 'all' || card.getAttribute('data-category') === activeFilter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    descs.forEach(function (desc) {
+      var cats = desc.getAttribute('data-category').split(' ');
+      if (activeFilter === 'all' || cats.indexOf(activeFilter) !== -1) {
+        desc.style.display = '';
+      } else {
+        desc.style.display = 'none';
+      }
+    });
+  }
+
+  function applyHashFilter() {
+    var hash = window.location.hash ? window.location.hash.slice(1) : '';
+    applyFilter(hash || 'all');
+  }
+
+  function scrollToFilterTarget(filter) {
+    var target = filter === 'all'
+      ? grid
+      : document.getElementById(filter) || document.querySelector('.prod-card[data-category="' + filter + '"]');
+
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.querySelectorAll('.prod-enquire').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  });
+
+  cards.forEach(function (card) {
+    var imagePath = card.getAttribute('data-image');
+    var imageAlt = card.getAttribute('data-image-alt') || card.querySelector('.prod-name').textContent;
+    var imagePath2 = card.getAttribute('data-image-2');
+    var imageAlt2 = card.getAttribute('data-image-2-alt') || imageAlt;
+
+    if (!imagePath) return;
+
+    var placeholder = card.querySelector('.prod-card-placeholder');
+    if (!placeholder) return;
+
+    var media = document.createElement('div');
+    media.className = 'prod-card-img';
+
+    if (imagePath2) {
+      media.style.flexDirection = 'column';
+      media.style.gap = '4px';
+      media.style.padding = '8px';
+      [{ src: imagePath, alt: imageAlt }, { src: imagePath2, alt: imageAlt2 }].forEach(function (item) {
+        var img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.alt;
+        img.loading = 'lazy';
+        img.style.cssText = 'flex:1;min-height:0;width:100%;object-fit:contain;';
+        img.onerror = function () { img.style.display = 'none'; };
+        media.appendChild(img);
+      });
+    } else {
+      var img = document.createElement('img');
+      img.src = imagePath;
+      img.alt = imageAlt;
+      img.loading = 'lazy';
+      img.onerror = function () {
+        var fb = document.createElement('div');
+        fb.className = 'prod-card-placeholder';
+        fb.textContent = card.querySelector('.prod-name').textContent;
+        media.replaceWith(fb);
+      };
+      media.appendChild(img);
+    }
+    placeholder.replaceWith(media);
+  });
+
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('a, button')) return;
+      var imgEl = card.querySelector('.prod-card-img img');
+      var imgPath = imgEl ? imgEl.getAttribute('src') : card.getAttribute('data-image');
+      var imgAlt = imgEl ? imgEl.getAttribute('alt') : card.getAttribute('data-image-alt');
+      var imgPath2 = card.getAttribute('data-image-2') || null;
+      var imgAlt2 = card.getAttribute('data-image-2-alt') || null;
+      openProdModal(
+        card.querySelector('.prod-name').textContent,
+        card.querySelector('.prod-tag').textContent,
+        imgPath,
+        imgAlt,
+        imgPath2,
+        imgAlt2
+      );
+    });
+  });
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = btn.getAttribute('data-filter');
+      applyFilter(filter);
+      scrollToFilterTarget(filter);
+      if (filter === 'all') {
+        history.replaceState(null, '', 'ambulance.html');
+      } else {
+        window.location.hash = filter;
+      }
+    });
+  });
+
+  applyHashFilter();
+  if (window.location.hash) {
+    scrollToFilterTarget(window.location.hash.slice(1));
+  }
+  window.addEventListener('hashchange', function () {
+    var hash = window.location.hash ? window.location.hash.slice(1) : 'all';
+    applyFilter(hash);
+    scrollToFilterTarget(hash);
+  });
+}());
+</script>
+<script src="site.js" defer></script>
+</body>
+</html>

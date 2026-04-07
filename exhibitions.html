@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibitions &amp; Events | GRAND by IJS Electronics</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="description" content="GRAND by IJS Electronics at trade shows across India and the world — Auto Expo, INTERSEC Dubai, India International Security Expo, TrafficTech, Medicall, and more.">
+<meta property="og:title" content="Exhibitions &amp; Events | GRAND by IJS Electronics">
+<meta property="og:description" content="See where GRAND has showcased emergency vehicle technology in India and internationally.">
+<meta property="og:image" content="https://grandwarninglights.in/images/expo-autoexpo-1.jpg">
+<meta property="og:url" content="https://grandwarninglights.in/exhibitions.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GRAND by IJS Electronics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exhibitions &amp; Events | GRAND by IJS Electronics">
+<meta name="twitter:description" content="Auto Expo, INTERSEC Dubai, and more exhibition highlights from GRAND.">
+<meta name="twitter:image" content="https://grandwarninglights.in/images/expo-autoexpo-1.jpg">
+<link rel="canonical" href="https://grandwarninglights.in/exhibitions.html">
+<meta name="theme-color" content="#1E2282">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1E2282;
+  --navy-dark: #141660;
+  --navy-light: #2B2FA8;
+  --red: #CC1F26;
+  --red-dark: #A01820;
+  --white: #FFFFFF;
+  --off-white: #F4F6FA;
+  --gray: #6B7280;
+  --gray-light: #E8ECF2;
+  --dark: #0D0E1A;
+  --text: #1A1B2E;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 72px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-logo img { height: 54px; width: auto; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-links a.active { color: var(--navy); }
+.nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: 4px !important; font-size: 12px !important; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--red-dark) !important; }
+
+/* HAMBURGER */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: 104px; left: 0; right: 0; background: var(--white); border-bottom: 2px solid var(--red); z-index: 99; padding: 16px 5vw; flex-direction: column; gap: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); text-decoration: none; padding: 14px 0; border-bottom: 1px solid var(--gray-light); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--red); }
+
+/* SECTION BASE */
+section { padding: 90px 5vw; }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+.section-label::before { content: ''; width: 20px; height: 2px; background: var(--red); display: inline-block; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(32px, 4.5vw, 52px); font-weight: 800; text-transform: uppercase; line-height: 1; color: var(--navy); margin-bottom: 1.25rem; }
+
+/* HERO */
+.exh-hero {
+  background: linear-gradient(rgba(14,17,65,0.82), rgba(14,17,65,0.92)), url('images/expo-autoexpo-1.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 104px;
+  height: 400px;
+  padding: 80px 5vw 64px;
+  position: relative; overflow: hidden;
+  display: flex; align-items: flex-end;
+  border-top: 4px solid var(--red);
+}
+.exh-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 50% 60% at 90% 50%, rgba(30,34,130,0.04) 0%, transparent 60%);
+}
+.exh-hero-inner { position: relative; z-index: 1; max-width: 760px; animation: fadeUp 0.7s 0.2s both; }
+.exh-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(48px, 6vw, 82px); font-weight: 800;
+  text-transform: uppercase; line-height: 0.95;
+  color: #fff; margin-bottom: 1.2rem;
+}
+.exh-hero-sub {
+  font-size: 18px; font-weight: 300;
+  color: rgba(255,255,255,0.7); line-height: 1.7; max-width: 580px; margin-bottom: 2rem;
+}
+.stat-pills { display: flex; gap: 12px; flex-wrap: wrap; }
+.stat-pill {
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+  color: #fff; font-size: 13px; font-weight: 600;
+  letter-spacing: 0.06em; padding: 10px 22px; border-radius: 40px;
+}
+
+/* EXHIBITION CARDS */
+.cards-section { background: var(--white); }
+.cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 2.5rem; }
+.exh-card {
+  background: var(--white); border-radius: 10px;
+  border: 1px solid var(--gray-light);
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.exh-card.international { border: 1px solid rgba(180,140,40,0.35); box-shadow: 0 2px 16px rgba(180,140,40,0.08); }
+.exh-card-img {
+  background: var(--gray-light); min-height: 200px;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 8px; position: relative;
+}
+.exh-card.international .exh-card-img { background: rgba(180,140,40,0.07); }
+.expo-photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 16px; border-radius: 8px; overflow: hidden; }
+.expo-photos img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.exh-card-img-text { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); text-align: center; padding: 0 20px; line-height: 1.8; }
+.exh-card-body { padding: 24px 24px 28px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.exh-year-badge {
+  display: inline-flex; align-items: center;
+  background: var(--red); color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+  padding: 4px 12px; border-radius: 3px;
+  align-self: flex-start;
+}
+.exh-card.international .exh-year-badge { background: rgba(160,120,20,1); }
+.exh-name { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: var(--navy); text-transform: uppercase; line-height: 1.1; }
+.exh-meta { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); }
+.exh-desc { font-size: 14px; font-weight: 300; color: var(--gray); line-height: 1.75; flex: 1; }
+.exh-intl-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(140,100,10,1); margin-top: 4px;
+}
+
+/* CTA STRIP */
+.cta-strip {
+  background: var(--navy); padding: 72px 5vw;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; gap: 24px;
+}
+.cta-strip-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px); font-weight: 700;
+  text-transform: uppercase; color: white;
+}
+.cta-strip-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--red); color: white;
+  padding: 14px 32px; border-radius: 4px; text-decoration: none;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.2s;
+}
+.cta-strip-btn:hover { background: var(--red-dark); }
+
+/* FOOTER */
+footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid var(--red); }
+.footer-top { display: grid; grid-template-columns: 2.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 24px; }
+.footer-logo { margin-bottom: 16px; }
+.footer-logo img { height: 44px; filter: brightness(0) invert(1); display: block; }
+.footer-tagline-accent { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--red); margin-bottom: 6px; }
+.footer-tagline { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 240px; }
+.footer-mission { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.07); font-size: 11.5px; font-style: italic; color: rgba(255,255,255,0.22); line-height: 1.5; }
+.footer-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-col li { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+.footer-cert { display: flex; gap: 8px; align-items: center; font-size: 11px; color: rgba(255,255,255,0.3); flex-wrap: wrap; }
+.cert-badge { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 9px; font-weight: 700; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 2px; }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+  width: 58px; height: 58px; border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s; text-decoration: none;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 22px rgba(0,0,0,0.32); }
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 1000px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+@media (max-width: 600px) {
+  .info-bar-phones { display: none !important; }
+  .info-bar-mobile { display: flex !important; }
+  nav { height: 56px; top: 36px; }
+  .nav-logo img { height: 40px; }
+  .mobile-menu { top: 92px; }
+  .heritage-hero, .products-hero, .exh-hero { height: auto; min-height: 0; }
+  .exh-hero { padding: 72px 5vw 48px; margin-top: 92px; }
+  section { padding: 56px 5vw; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- INFO BAR -->
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;background:#1E2282;padding:6px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;">
+  <div class="info-bar-phones" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+    <a href="tel:+911140527350" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 11-40527350/51/52/53/54</a>
+    <a href="tel:+911204117740" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 120-4117740</a>
+    <a href="tel:+919810811668" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:500;">📞 +91 9810811668</a>
+    <span style="color:rgba(255,255,255,0.85);font-size:12px;font-weight:500;">✉ grandinfo2004&#64;gmail.com</span>
+  </div>
+  <a class="info-bar-mobile" href="tel:+919810811668" style="display:none;color:rgba(255,255,255,0.9);text-decoration:none;font-size:13px;font-weight:600;">📞 +91 9810811668</a>
+  <a href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" style="background:#25D366;color:white;padding:4px 14px;border-radius:20px;text-decoration:none;font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px;">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="GRAND by IJS Electronics" style="height:54px; width:auto;"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="exhibitions.html" class="active">Exhibitions</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="ambulance.html">Ambulance AIS 125</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" type="button" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+  <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+  <a href="exhibitions.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Exhibitions</a>
+  <a href="products.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Products</a>
+  <a href="ambulance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Ambulance AIS 125</a>
+  <a href="index.html#clients" onclick="document.getElementById('mobileMenu').classList.remove('open')">Clients</a>
+  <a href="index.html#contact" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact Us</a>
+</div>
+
+<!-- SECTION 1: HERO -->
+<div class="exh-hero">
+  <div class="exh-hero-inner">
+    <div class="section-label">Where You'll Find Us</div>
+    <h1>On Every Stage</h1>
+    <p class="exh-hero-sub">From Pragati Maidan to Dubai — GRAND has represented Indian emergency vehicle technology on stages across the world for over a decade.</p>
+    <div class="stat-pills">
+      <span class="stat-pill">India + International</span>
+      <span class="stat-pill">Security to Medical</span>
+      <span class="stat-pill">2013 to 2025</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: EXHIBITION CARDS -->
+<section class="cards-section">
+  <div class="section-label">Our Exhibitions</div>
+  <h2 class="section-title">Trade Shows &amp;<br>Events</h2>
+  <div class="cards-grid">
+
+    <!-- Card 1: Auto Expo 2025 -->
+    <div class="exh-card">
+      <div class="exh-card-img" style="min-height:0;padding:0;">
+        <div class="expo-photos" style="margin-top:0;border-radius:0;">
+          <img src="images/expo-autoexpo-1.jpg" alt="GRAND emergency vehicle products">
+          <img src="images/expo-autoexpo-2.jpg" alt="GRAND emergency vehicle products">
+          <img src="images/expo-autoexpo-3.jpg" alt="GRAND emergency vehicle products">
+        </div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2025</span>
+        <div class="exh-name">Auto Expo —<br>The Components Show</div>
+        <div class="exh-meta">Bharat Mandapam, New Delhi</div>
+        <div class="exh-desc">GRAND exhibited at Auto Expo The Components Show 2025, Bharat Mandapam, New Delhi — demonstrating GRAND emergency warning systems on live police vehicles for fleet managers, OEMs, and government procurement officers.</div>
+      </div>
+    </div>
+
+    <!-- Card 2: Medicall 2025 -->
+    <div class="exh-card">
+      <div class="exh-card-img">
+        <div class="exh-card-img-text">Photos Coming Soon</div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2025</span>
+        <div class="exh-name">Medicall 2025</div>
+        <div class="exh-meta">India</div>
+        <div class="exh-desc">GRAND at Medicall 2025 — a major medical and healthcare trade show. Demonstrating GRAND's commitment to India's ambulance and emergency medical vehicle sector.</div>
+      </div>
+    </div>
+
+    <!-- Card 3: INTERSEC Dubai 2014 — international milestone -->
+    <!-- TODO: Add photos from Office/ER-ONE/Exhibitions/INTERSEC 2014 (Dubai)/ -->
+    <div class="exh-card international">
+      <div class="exh-card-img">
+        <div class="exh-card-img-text">Photos Coming Soon<br>Office/ER-ONE/Exhibitions/INTERSEC 2014 (Dubai)/</div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2014</span>
+        <div class="exh-name">INTERSEC Dubai 2014</div>
+        <div class="exh-meta">Dubai, UAE</div>
+        <div class="exh-desc">GRAND exhibited at INTERSEC 2014 in Dubai — the world's leading safety, security and fire protection trade show. A landmark moment: Indian emergency warning technology presented on the international stage.</div>
+        <div class="exh-intl-badge">International Exhibition</div>
+      </div>
+    </div>
+
+    <!-- Card 4: India International Security Expo 2013 -->
+    <div class="exh-card">
+      <div class="exh-card-img" style="min-height:0;padding:0;">
+        <div class="expo-photos" style="margin-top:0;border-radius:0;">
+          <img src="images/expo-iise-1.jpg" alt="GRAND booth at India International Security Expo 2013, Pragati Maidan">
+          <img src="images/expo-iise-2.jpg" alt="GRAND booth at India International Security Expo 2013, Pragati Maidan">
+          <img src="images/expo-iise-3.jpg" alt="GRAND booth at India International Security Expo 2013, Pragati Maidan">
+          <img src="images/expo-iise-4.jpg" alt="GRAND booth at India International Security Expo 2013, Pragati Maidan">
+        </div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2013</span>
+        <div class="exh-name">India International<br>Security Expo</div>
+        <div class="exh-meta">Pragati Maidan, New Delhi · September 2013</div>
+        <div class="exh-desc">Four days at the India International Security Expo, September 2013 — GRAND presented its emergency vehicle warning systems to India's security and law enforcement establishment.</div>
+      </div>
+    </div>
+
+    <!-- Card 5: TrafficTech 2013 -->
+    <!-- TODO: Add photos from Office/ER-ONE/Exhibitions/TrafficTech 2013/ -->
+    <div class="exh-card">
+      <div class="exh-card-img">
+        <div class="exh-card-img-text">Photos Coming Soon<br>Office/ER-ONE/Exhibitions/TrafficTech 2013/</div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2013</span>
+        <div class="exh-name">TrafficTech 2013</div>
+        <div class="exh-meta">India</div>
+        <div class="exh-desc">GRAND at TrafficTech 2013 — one of India's leading road traffic technology exhibitions, showcasing emergency vehicle warning solutions to transport planners and fleet operators.</div>
+      </div>
+    </div>
+
+    <!-- Card 6: Fire India 2013 -->
+    <div class="exh-card">
+      <div class="exh-card-img">
+        <div class="exh-card-img-text">Photo Coming Soon</div>
+      </div>
+      <div class="exh-card-body">
+        <span class="exh-year-badge">2013</span>
+        <div class="exh-name">Fire India 2013</div>
+        <div class="exh-meta">Mumbai</div>
+        <div class="exh-desc">GRAND at Fire India 2013, Mumbai — presenting emergency vehicle warning products to India's fire and emergency services sector.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 3: CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-text">Want to meet us at our next exhibition?</div>
+  <a href="index.html#contact" class="cta-strip-btn">Get in Touch</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="images/grand-logo-clean.png" alt="GRAND Logo"></div>
+      <div class="footer-tagline-accent">Innovation · Excellence · Reliability · Trust</div>
+      <div class="footer-tagline">IJS Electronics · Manufacturers since 1981<br>Noida &amp; New Delhi, India</div>
+      <div class="footer-mission">"To make life safer for those who save lives."</div>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html#ef2">Ef-2 Series</a></li>
+        <li><a href="products.html#efone">Ef-One Series</a></li>
+        <li><a href="products.html#sirens">PA / Siren Systems</a></li>
+        <li><a href="products.html#revolving">Revolving Lights</a></li>
+        <li><a href="products.html#ambulance">Ambulance LED AIS 125</a></li>
+        <li><a href="products.html#applications">Applications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About IJS Electronics</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="index.html#clients">Our Clients</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Credentials</h4>
+      <ul>
+        <li>ISO 9001:2015</li>
+        <li>29 Design Patents</li>
+        <li>AIS 125 Compliant</li>
+        <li>OEM Approved</li>
+        <li>1–3 Year Warranty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 IJS Electronics. All rights reserved. | D-39 Sector 6, Noida</div>
+    <div class="footer-cert">
+      <span class="cert-badge">ISO 9001:2015</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Sticky Button -->
+<a class="whatsapp-float" href="https://wa.me/919810811668" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.77L0 32l8.476-2.004A15.934 15.934 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.791-1.864l-.487-.29-5.03 1.189 1.212-4.898-.318-.502A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.161-2.72-1.294-.366-.133-.632-.199-.898.2-.266.398-1.031 1.294-1.264 1.56-.233.266-.465.299-.863.1-.398-.2-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.36-2.213-2.758-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.2-.233.266-.399.399-.665.133-.266.066-.499-.034-.698-.1-.2-.898-2.163-1.231-2.963-.324-.778-.653-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.064.499-.366.398-1.396 1.362-1.396 3.323s1.43 3.855 1.629 4.121c.2.266 2.815 4.298 6.822 6.028.954.411 1.698.657 2.279.841.957.305 1.829.262 2.517.159.768-.114 2.354-.962 2.687-1.892.333-.93.333-1.727.233-1.892-.1-.166-.366-.266-.764-.465z"/>
+  </svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>
