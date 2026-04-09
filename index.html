@@ -356,6 +356,7 @@ footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid 
   .hero h1 { font-size: clamp(36px, 10vw, 52px); }
   .hero p { font-size: 14px; }
   .hero-mission { font-size: 12px; }
+  .hero-tagline { font-size: 13px; letter-spacing: 0.1em; }
   .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
   .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 14px 20px; }
   .hero-stats { gap: 1.2rem; flex-wrap: wrap; margin-top: 1.2rem; padding-top: 1.2rem; }
@@ -364,13 +365,21 @@ footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid 
   /* Sections */
   section { padding: 56px 5vw; }
   .legacy { padding: 56px 5vw; }
+  .patents { padding: 56px 5vw; }
   .legacy-inner { gap: 32px; }
   .legacy h2 { font-size: clamp(36px, 10vw, 56px); }
   .legacy-right p { font-size: 15px; }
 
+  /* About */
+  .about-grid { gap: 28px; }
+
   /* Products */
   .products-grid { grid-template-columns: 1fr; }
   .pf-content { padding: 28px 20px; }
+  .pf-img { min-height: 220px; }
+
+  /* Strip */
+  .strip-item { padding: 8px 12px; font-size: 11px; }
 
   /* Patents */
   .patents-grid { grid-template-columns: repeat(2, 1fr); }
@@ -379,8 +388,8 @@ footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid 
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Cert bar */
-  .cert-bar { gap: 12px; justify-content: flex-start; }
-  .cert-item { font-size: 12px; }
+  .cert-bar { gap: 10px; justify-content: flex-start; }
+  .cert-item { font-size: 11px; flex: 0 0 calc(50% - 5px); }
 
   /* Contact */
   .form-row { grid-template-columns: 1fr; }
@@ -392,6 +401,20 @@ footer { background: var(--dark); padding: 56px 5vw 28px; border-top: 3px solid 
 
   /* Video */
   .video-section-inner { padding: 28px 5vw; }
+}
+
+@media (max-width: 390px) {
+  nav { padding: 0 4vw; }
+  .hero { padding: 72px 4vw 28px; }
+  section { padding: 44px 4vw; }
+  .legacy, .patents { padding: 44px 4vw; }
+  .hero h1 { font-size: 30px; }
+  .stat-val { font-size: 22px; }
+  .stat-lbl { font-size: 9px; }
+  .hero-stats { gap: 0.8rem; }
+  .patents-grid { grid-template-columns: 1fr; }
+  .cert-item { flex: 0 0 100%; }
+  .footer-top { gap: 20px; }
 }
 </style>
 </head>
